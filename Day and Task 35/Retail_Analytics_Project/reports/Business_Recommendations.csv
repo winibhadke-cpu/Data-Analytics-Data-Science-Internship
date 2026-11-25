@@ -1,0 +1,11 @@
+Finding,Evidence,Impact,Recommendation,Priority,Owner (proposed),Success indicator
+Rice has lowest revenue,"INR 6,720; 8.21% of revenue","Potential positioning issue, not proven low profit",Test merchandising and price sensitivity before changing assortment,Medium,Merchandising,Revenue and units per week
+Highest-value customer,"Priya INR 17,780",Concentration in one observed name,Pilot personalized loyalty offers after verifying identity,High,CRM,Repeat orders and incremental revenue
+No category trend available,One month: October 2026,Decline cannot be established,Collect monthly history and compare like-for-like periods,High,Analytics,Months with complete data
+Regional profit unavailable,No usable cost or profit field,Expansion profitability unknown,Capture cost by order and city before expansion decisions,High,Finance,Cost coverage and city margin
+Observed repeat purchases,"6 names, 5 orders each",Loyalty opportunity; not proven retention,Introduce verified customer IDs and test a loyalty pilot,High,CRM,Cohort retention and incremental orders
+Order values vary,"INR 320 to 7,500; median 2,075",Average may obscure typical baskets,Test bundles and discounts with margin guardrails,Medium,Pricing,"AOV, median order value and margin"
+Units sold are similar,21–24 units per product,Revenue alone misstates stock needs,"Use unit demand, lead times and stockout data for replenishment",High,Operations,Stockout rate and inventory turnover
+Medium segment dominates,"5 names; INR 64,090",Upselling opportunity,Test targeted cross-selling to medium-value customers,Medium,Marketing,Incremental conversion and spend
+Product concentration,"Headphones + Lamp INR 60,200; 73.53%",Dependency on two products,Test complementary products in small batches,Medium,Product,Top-two share and incremental contribution
+City concentration,"Pune + Nashik INR 57,820; Mumbai INR 9,080",Geographic dependency; demand unknown,Investigate Mumbai demand and distribution before a limited pilot,Medium,Sales,Incremental sales and contribution by city

@@ -1,0 +1,17 @@
+Import transformed_retail_sales.csv as Retail. Set Order_Date to Date. Create measures individually (not calculated columns).
+Total Revenue = SUM(Retail[Sales])
+Total Orders = DISTINCTCOUNT(Retail[Order_ID])
+Total Customers = DISTINCTCOUNT(Retail[Customer_Name])
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+Total Units Sold = SUM(Retail[Quantity])
+Average Customer Spending = DIVIDE([Total Revenue], [Total Customers])
+Repeat Customers = COUNTROWS(FILTER(VALUES(Retail[Customer_Name]), CALCULATE(DISTINCTCOUNT(Retail[Order_ID])) > 1))
+Observed Repeat Rate = DIVIDE([Repeat Customers], [Total Customers])
+Total Profit = BLANK()
+Profit Margin = DIVIDE([Total Profit], [Total Revenue])
+
+Future growth setup: create a contiguous date table and mark it as date table; relate Date[Date] one-to-many to Retail[Order_Date]. Use month context.
+Date = CALENDAR(DATE(2026,1,1), DATE(2026,12,31))
+Previous Month Revenue = CALCULATE([Total Revenue], DATEADD('Date'[Date], -1, MONTH))
+Growth % = VAR Prev = [Previous Month Revenue] RETURN IF(ISBLANK(Prev) || Prev = 0 || ISBLANK([Total Revenue]), BLANK(), DIVIDE([Total Revenue]-Prev, Prev))
+Format rate, margin and growth as Percentage (do not multiply by 100). Profit placeholder must remain blank until complete profit data is supplied; then replace with SUM(Retail[Profit]). DAX supplied for implementation in Power BI Desktop, not executed here. Customer names are proxies.

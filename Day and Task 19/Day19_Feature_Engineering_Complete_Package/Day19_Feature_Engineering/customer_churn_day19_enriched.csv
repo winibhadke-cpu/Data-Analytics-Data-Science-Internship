@@ -1,0 +1,501 @@
+Customer_ID,Tenure_Months,Monthly_Charges_INR,Support_Calls_90_Days,Annual_Contract,Satisfaction_Score,Churn,Payment_Method,Internet_Service,City_Tier
+C0001,36,860.06,2,0,1.0,1,UPI,Fiber,Metro
+C0002,48,2309.9,0,0,1.0,1,UPI,Fiber,Tier 3
+C0003,42,2386.31,3,1,2.0,1,UPI,Fiber,Tier 2
+C0004,62,1316.8,4,0,2.0,1,Card,Mobile,Metro
+C0005,7,907.97,3,0,2.0,0,UPI,DSL,Tier 3
+C0006,23,1636.63,3,1,2.0,1,Bank Transfer,Fiber,Tier 2
+C0007,4,671.33,3,0,3.0,0,Card,Fiber,Tier 3
+C0008,3,1595.87,4,0,1.0,1,Card,DSL,Tier 3
+C0009,10,575.77,2,1,3.0,0,Card,Mobile,Metro
+C0010,11,2035.77,3,1,3.0,1,Card,DSL,Tier 2
+C0011,63,1388.99,3,0,1.0,1,Card,Fiber,Tier 3
+C0012,16,1584.31,0,1,2.0,1,UPI,DSL,Tier 2
+C0013,21,1441.66,2,0,1.0,1,UPI,Mobile,Tier 2
+C0014,7,1619.9,2,1,4.0,1,Card,Fiber,Metro
+C0015,52,628.35,2,1,2.0,0,UPI,Fiber,Metro
+C0016,30,1220.45,2,0,2.0,1,Card,Fiber,Tier 2
+C0017,60,880.23,0,1,2.0,0,Bank Transfer,DSL,Tier 2
+C0018,27,823.24,3,0,1.0,1,Card,Fiber,Metro
+C0019,61,,2,0,4.0,0,UPI,Mobile,Metro
+C0020,48,551.34,2,1,3.0,0,Card,DSL,Tier 3
+C0021,28,1824.47,1,1,5.0,0,Bank Transfer,DSL,Tier 2
+C0022,10,2221.29,2,0,5.0,1,Bank Transfer,DSL,Metro
+C0023,50,510.03,1,1,5.0,0,Card,DSL,Metro
+C0024,26,1478.08,0,1,5.0,0,,DSL,Tier 3
+C0025,55,2389.04,1,0,4.0,1,Bank Transfer,DSL,Tier 3
+C0026,55,685.42,2,1,2.0,1,Card,Fiber,Tier 2
+C0027,7,1750.0,2,1,3.0,0,UPI,DSL,Tier 3
+C0028,46,2066.31,1,1,4.0,0,Card,Mobile,Tier 3
+C0029,69,797.39,1,0,4.0,0,Card,Fiber,Metro
+C0030,50,439.36,0,0,4.0,1,,Fiber,Tier 2
+C0031,52,1993.0,0,0,5.0,1,Card,Fiber,Metro
+C0032,11,1746.86,1,1,5.0,0,Card,DSL,Tier 2
+C0033,48,415.4,1,1,3.0,1,Card,DSL,Tier 2
+C0034,40,685.04,2,0,5.0,1,Card,Mobile,Tier 3
+C0035,54,1377.68,1,0,5.0,0,Card,Fiber,Metro
+C0036,4,1013.8,1,0,4.0,1,UPI,Fiber,Tier 2
+C0037,33,1316.94,1,1,1.0,1,,,Tier 3
+C0038,13,2339.28,2,1,4.0,1,Card,DSL,Tier 3
+C0039,67,856.96,0,1,3.0,0,Bank Transfer,Fiber,Metro
+C0040,33,1019.09,1,0,4.0,0,UPI,Fiber,Tier 2
+C0041,64,2165.73,1,1,2.0,0,UPI,Mobile,Metro
+C0042,48,1516.45,2,0,4.0,0,Card,DSL,Tier 2
+C0043,51,2300.07,1,0,2.0,1,Card,Mobile,Tier 3
+C0044,37,,4,0,2.0,1,UPI,Mobile,Tier 2
+C0045,56,1228.1,0,0,4.0,0,Card,Fiber,Tier 3
+C0046,44,1415.55,3,1,1.0,0,UPI,DSL,Tier 3
+C0047,5,1166.11,0,0,3.0,0,UPI,DSL,Tier 2
+C0048,2,1568.0,0,0,3.0,0,UPI,Mobile,Tier 3
+C0049,61,2188.79,2,1,1.0,1,UPI,Mobile,Tier 3
+C0050,63,1529.36,0,1,4.0,0,Card,Mobile,Metro
+C0051,42,1409.47,2,0,2.0,1,Card,Mobile,Tier 3
+C0052,10,786.82,1,1,4.0,0,Bank Transfer,DSL,Tier 2
+C0053,20,1699.85,1,1,3.0,0,Card,Mobile,Tier 2
+C0054,69,888.53,1,0,3.0,0,Card,Fiber,Tier 2
+C0055,44,426.84,3,1,5.0,0,Card,Fiber,Tier 2
+C0056,39,2027.23,1,0,3.0,1,Card,Mobile,Metro
+C0057,28,1145.27,0,0,2.0,0,Card,Fiber,Metro
+C0058,26,1783.43,4,1,2.0,1,Card,Mobile,Tier 2
+C0059,7,657.64,2,1,1.0,1,UPI,Fiber,Metro
+C0060,12,2078.15,2,1,4.0,1,UPI,Mobile,Tier 2
+C0061,13,1915.92,0,0,5.0,1,Card,DSL,Metro
+C0062,55,816.57,0,0,5.0,0,UPI,Fiber,Metro
+C0063,68,2194.42,1,0,5.0,0,,DSL,Metro
+C0064,24,1034.34,1,1,4.0,1,Card,Fiber,Metro
+C0065,40,858.25,0,0,2.0,0,UPI,Fiber,Tier 2
+C0066,4,2351.03,1,0,2.0,1,Bank Transfer,DSL,Metro
+C0067,49,,0,1,2.0,0,Card,Mobile,Metro
+C0068,29,1110.15,3,0,5.0,1,Card,Mobile,Metro
+C0069,52,,1,1,5.0,0,UPI,Mobile,Tier 3
+C0070,69,1154.27,2,0,2.0,1,UPI,Mobile,Tier 2
+C0071,1,1372.8,0,0,4.0,1,UPI,Mobile,Metro
+C0072,11,1059.8,1,0,1.0,1,Card,Mobile,Tier 2
+C0073,19,1611.75,0,1,3.0,1,Card,Mobile,Metro
+C0074,29,390.93,3,1,5.0,0,Card,DSL,Metro
+C0075,25,853.08,0,0,3.0,1,Card,Mobile,Tier 3
+C0076,59,964.94,2,1,5.0,0,Card,Mobile,Tier 2
+C0077,39,1529.13,2,0,5.0,0,UPI,Mobile,Tier 3
+C0078,11,478.82,2,1,1.0,0,UPI,DSL,Tier 3
+C0079,23,476.22,0,1,1.0,0,Card,DSL,Tier 3
+C0080,65,412.57,1,0,1.0,1,Card,Mobile,Metro
+C0081,67,,3,0,4.0,1,Bank Transfer,Mobile,Tier 2
+C0082,26,1588.85,1,0,2.0,1,UPI,Fiber,Metro
+C0083,42,736.63,1,0,4.0,0,UPI,Mobile,Tier 2
+C0084,35,,0,0,,1,UPI,DSL,Tier 2
+C0085,29,859.61,2,1,4.0,0,UPI,Fiber,Metro
+C0086,60,782.96,1,0,3.0,0,Card,DSL,Tier 2
+C0087,48,2196.13,1,0,4.0,0,Bank Transfer,Mobile,Metro
+C0088,14,1176.69,1,1,3.0,0,Bank Transfer,Fiber,Tier 2
+C0089,35,578.12,1,0,5.0,0,Card,DSL,Tier 2
+C0090,52,2259.24,4,1,5.0,0,Bank Transfer,Fiber,Tier 2
+C0091,29,2037.65,2,0,,1,Bank Transfer,Fiber,Metro
+C0092,7,1656.38,2,0,4.0,1,Card,DSL,Metro
+C0093,68,1380.0,0,0,2.0,1,Bank Transfer,DSL,Metro
+C0094,72,761.15,3,0,3.0,0,UPI,Fiber,Tier 2
+C0095,8,1811.03,1,0,4.0,1,UPI,Mobile,Tier 3
+C0096,42,2136.91,1,1,4.0,0,,Fiber,Metro
+C0097,56,2127.23,3,1,3.0,1,UPI,Fiber,Tier 2
+C0098,47,1627.44,0,0,5.0,0,UPI,Mobile,Tier 3
+C0099,19,2366.39,1,0,1.0,1,UPI,Mobile,Tier 2
+C0100,24,752.07,1,1,4.0,0,Bank Transfer,DSL,Tier 3
+C0101,35,1978.3,1,0,3.0,0,Bank Transfer,DSL,Metro
+C0102,20,632.73,0,1,2.0,0,Bank Transfer,Fiber,Tier 3
+C0103,36,1102.35,1,1,3.0,0,Bank Transfer,DSL,Tier 3
+C0104,60,1049.65,1,1,3.0,1,Card,Fiber,Tier 2
+C0105,39,517.82,2,0,2.0,1,Bank Transfer,DSL,Tier 3
+C0106,31,2212.59,1,0,4.0,1,,Mobile,Tier 2
+C0107,49,1208.4,1,0,2.0,0,UPI,DSL,Metro
+C0108,63,2398.4,2,0,5.0,1,UPI,Fiber,Tier 3
+C0109,63,2395.63,1,0,5.0,1,Bank Transfer,Mobile,Tier 3
+C0110,26,429.77,3,0,5.0,0,Card,Mobile,Tier 2
+C0111,7,,4,0,5.0,1,UPI,Fiber,Tier 3
+C0112,7,988.27,2,1,4.0,0,Card,Mobile,Metro
+C0113,42,1066.38,0,1,1.0,0,Card,DSL,Tier 2
+C0114,65,444.35,2,0,5.0,0,Card,Mobile,Tier 3
+C0115,36,749.62,1,1,4.0,0,UPI,DSL,Metro
+C0116,60,,1,0,1.0,1,Card,Mobile,Tier 2
+C0117,55,1725.87,4,0,1.0,1,Card,Mobile,Tier 3
+C0118,33,2000.13,2,1,3.0,1,Card,DSL,Tier 2
+C0119,38,1952.53,1,0,5.0,1,Card,DSL,Tier 3
+C0120,4,1388.1,1,1,4.0,0,Bank Transfer,Fiber,Tier 3
+C0121,64,1947.09,1,0,2.0,1,Card,Fiber,Tier 2
+C0122,18,499.6,0,0,3.0,0,UPI,Mobile,Tier 2
+C0123,66,2290.48,2,1,3.0,0,Card,DSL,Tier 3
+C0124,40,706.26,2,1,5.0,0,Card,DSL,Tier 3
+C0125,23,1004.86,2,1,2.0,1,UPI,Fiber,Tier 2
+C0126,54,748.75,1,1,5.0,0,Card,,Metro
+C0127,59,922.7,1,0,4.0,0,UPI,Mobile,Metro
+C0128,33,572.23,0,1,2.0,0,Bank Transfer,DSL,Metro
+C0129,6,836.77,0,1,4.0,0,Card,DSL,Metro
+C0130,60,440.85,0,1,3.0,0,UPI,Fiber,Tier 3
+C0131,4,1185.04,3,1,4.0,1,Bank Transfer,Mobile,Tier 2
+C0132,55,2268.14,1,1,5.0,0,UPI,Fiber,Tier 3
+C0133,53,885.25,0,0,4.0,1,Card,,Tier 3
+C0134,66,1182.48,2,1,3.0,1,Card,Mobile,Tier 2
+C0135,8,1860.94,1,1,3.0,1,UPI,DSL,Metro
+C0136,49,1242.19,2,0,3.0,1,Card,Mobile,Tier 3
+C0137,64,1529.23,1,0,5.0,0,Bank Transfer,Fiber,Metro
+C0138,28,913.11,1,0,5.0,0,Card,Mobile,Metro
+C0139,22,1366.46,2,0,1.0,1,Card,DSL,Tier 3
+C0140,51,650.57,3,0,4.0,1,Card,Fiber,Metro
+C0141,34,1597.04,0,1,4.0,0,Card,DSL,Metro
+C0142,1,2040.25,2,0,3.0,1,Bank Transfer,Fiber,Tier 3
+C0143,54,1023.79,2,0,2.0,0,UPI,DSL,Metro
+C0144,4,1204.8,1,0,1.0,1,Bank Transfer,Mobile,Tier 2
+C0145,47,2060.96,0,0,1.0,1,,DSL,Metro
+C0146,47,471.72,0,1,5.0,0,UPI,Mobile,Tier 3
+C0147,26,880.38,1,0,3.0,0,Bank Transfer,Mobile,Tier 2
+C0148,41,1851.68,0,0,1.0,1,UPI,DSL,Tier 3
+C0149,42,2157.44,2,1,5.0,0,Bank Transfer,,Metro
+C0150,1,1559.28,2,0,4.0,1,UPI,Mobile,Tier 3
+C0151,69,1002.48,1,0,2.0,0,Bank Transfer,DSL,Metro
+C0152,37,1502.54,2,1,,0,UPI,DSL,Tier 3
+C0153,66,1584.97,1,0,4.0,1,Card,DSL,Tier 3
+C0154,56,1272.97,3,1,5.0,0,Bank Transfer,,Metro
+C0155,61,1662.99,1,1,4.0,0,UPI,Fiber,Tier 3
+C0156,69,1597.84,2,0,2.0,1,Card,Mobile,Tier 2
+C0157,42,1218.13,1,0,1.0,1,Card,Mobile,Metro
+C0158,13,995.3,1,1,1.0,1,UPI,DSL,Tier 3
+C0159,28,1364.13,1,1,3.0,0,UPI,DSL,Tier 2
+C0160,66,1116.4,1,0,3.0,1,UPI,,Tier 3
+C0161,60,2151.4,3,0,5.0,1,Card,Mobile,Tier 2
+C0162,33,2389.37,3,1,4.0,1,UPI,DSL,Tier 2
+C0163,48,2086.28,2,1,2.0,1,UPI,Mobile,Tier 2
+C0164,5,1734.29,0,0,2.0,1,Bank Transfer,DSL,Tier 3
+C0165,2,2002.77,0,0,3.0,1,Card,Mobile,Tier 2
+C0166,21,1797.62,2,0,2.0,1,UPI,Fiber,Tier 2
+C0167,63,870.99,0,0,4.0,0,UPI,Mobile,Tier 3
+C0168,63,1370.48,0,0,2.0,0,Card,Fiber,Tier 3
+C0169,41,1779.17,0,1,5.0,0,Card,Mobile,Metro
+C0170,54,2251.04,1,0,2.0,1,Bank Transfer,Mobile,Tier 3
+C0171,52,887.27,1,0,1.0,0,UPI,Mobile,Tier 3
+C0172,27,1556.54,1,0,5.0,1,UPI,Mobile,Tier 3
+C0173,27,,2,0,5.0,1,Bank Transfer,DSL,Tier 2
+C0174,24,1011.19,2,1,3.0,0,UPI,Fiber,Metro
+C0175,31,1279.76,0,1,4.0,1,Card,Mobile,Metro
+C0176,27,2352.5,3,0,3.0,1,Card,Fiber,Tier 2
+C0177,52,675.23,2,0,1.0,0,Card,Fiber,Metro
+C0178,57,775.94,1,1,3.0,0,UPI,DSL,Tier 3
+C0179,53,1876.52,1,0,2.0,0,UPI,DSL,Tier 3
+C0180,10,1700.88,1,1,5.0,0,UPI,DSL,Tier 3
+C0181,12,1147.87,2,0,2.0,1,UPI,DSL,Tier 3
+C0182,20,1143.76,0,0,2.0,1,UPI,Mobile,Tier 2
+C0183,52,1494.82,1,1,2.0,1,,Mobile,Tier 2
+C0184,20,661.08,2,0,1.0,1,Card,Mobile,Tier 2
+C0185,25,1449.68,1,0,,0,Bank Transfer,Fiber,Tier 2
+C0186,50,1414.88,2,0,2.0,0,Bank Transfer,Mobile,Tier 3
+C0187,28,1206.92,5,1,1.0,1,Card,DSL,Tier 3
+C0188,18,592.98,0,0,3.0,0,UPI,Mobile,Tier 2
+C0189,67,2149.57,2,0,5.0,1,Bank Transfer,Fiber,Tier 3
+C0190,38,2157.15,1,1,2.0,0,UPI,DSL,Tier 3
+C0191,11,2365.91,0,1,3.0,1,UPI,Mobile,Metro
+C0192,63,,1,1,3.0,0,Card,DSL,Tier 2
+C0193,45,932.91,4,0,,1,Card,Mobile,Tier 3
+C0194,4,632.19,1,1,2.0,1,Bank Transfer,DSL,Tier 2
+C0195,65,1695.79,3,1,1.0,1,Bank Transfer,Fiber,Tier 2
+C0196,55,386.57,1,0,,0,UPI,Fiber,Tier 2
+C0197,59,1907.84,2,0,3.0,1,Bank Transfer,DSL,Tier 2
+C0198,53,1069.37,2,1,3.0,1,Card,Fiber,Tier 2
+C0199,71,1346.78,1,0,2.0,1,UPI,Mobile,Tier 3
+C0200,13,2279.54,3,0,2.0,1,UPI,Fiber,Tier 2
+C0201,27,879.16,1,0,3.0,0,Card,Fiber,Tier 2
+C0202,48,1363.91,4,0,1.0,1,UPI,DSL,Tier 2
+C0203,3,1509.59,0,0,1.0,1,Card,Fiber,Metro
+C0204,26,600.59,1,1,1.0,0,Card,Fiber,Tier 2
+C0205,22,1178.41,0,0,5.0,1,Bank Transfer,Fiber,Metro
+C0206,9,1187.33,0,0,,1,UPI,Fiber,Tier 2
+C0207,28,2192.7,1,0,5.0,1,UPI,Mobile,Tier 3
+C0208,36,2253.23,2,1,5.0,1,Card,Mobile,Metro
+C0209,26,1621.55,1,0,5.0,0,UPI,Mobile,Tier 2
+C0210,19,,1,0,3.0,0,UPI,Fiber,Metro
+C0211,51,1763.95,2,0,4.0,1,UPI,Fiber,Metro
+C0212,59,2114.92,0,1,4.0,0,UPI,Mobile,Metro
+C0213,22,2080.29,1,1,4.0,1,UPI,DSL,Tier 3
+C0214,10,472.0,1,1,2.0,0,Card,Fiber,Tier 3
+C0215,59,1743.36,0,0,2.0,1,Card,Mobile,Metro
+C0216,15,377.41,1,0,5.0,1,UPI,DSL,Metro
+C0217,7,1463.11,1,1,3.0,0,UPI,Fiber,Tier 2
+C0218,41,2019.64,1,1,4.0,0,UPI,Mobile,Tier 3
+C0219,32,1384.84,0,0,4.0,1,Bank Transfer,Mobile,Tier 2
+C0220,42,1181.06,0,0,4.0,0,UPI,Fiber,Tier 3
+C0221,21,789.57,1,1,4.0,1,Card,Fiber,Metro
+C0222,41,2212.0,2,0,5.0,1,UPI,Fiber,Metro
+C0223,56,1040.86,2,0,4.0,0,UPI,DSL,Tier 2
+C0224,16,1326.1,2,0,3.0,1,UPI,Mobile,Tier 2
+C0225,57,1069.32,2,0,1.0,0,Bank Transfer,Mobile,Tier 2
+C0226,65,2029.31,1,0,1.0,1,Card,Fiber,Metro
+C0227,5,1929.74,1,1,2.0,1,Bank Transfer,DSL,Tier 2
+C0228,57,1743.45,3,1,2.0,1,UPI,DSL,Tier 2
+C0229,52,936.37,2,1,5.0,0,Bank Transfer,Fiber,Tier 2
+C0230,34,1751.11,0,1,4.0,0,Card,Fiber,Metro
+C0231,12,2292.04,1,1,,1,UPI,Mobile,Tier 2
+C0232,35,1690.21,1,1,4.0,0,Card,Fiber,Metro
+C0233,5,,0,0,,1,Bank Transfer,DSL,Tier 2
+C0234,21,2001.95,4,0,2.0,1,UPI,DSL,Tier 2
+C0235,46,2394.21,0,1,3.0,0,UPI,DSL,Tier 3
+C0236,26,1279.16,4,0,,0,Card,Mobile,Metro
+C0237,68,1429.95,1,1,3.0,1,UPI,Fiber,Metro
+C0238,42,570.13,1,1,4.0,0,Card,Fiber,Tier 2
+C0239,48,1940.89,1,0,4.0,1,UPI,Fiber,Tier 3
+C0240,30,790.93,2,1,,0,UPI,DSL,Tier 2
+C0241,56,1337.78,1,1,1.0,0,Card,Mobile,Tier 3
+C0242,47,1776.04,1,0,1.0,1,Card,Fiber,Tier 2
+C0243,3,785.73,2,0,2.0,1,UPI,DSL,Tier 2
+C0244,25,1287.48,0,0,1.0,1,UPI,Fiber,Tier 3
+C0245,13,1995.57,3,1,4.0,1,Card,Mobile,Tier 2
+C0246,33,1525.9,0,0,4.0,0,Card,DSL,Metro
+C0247,20,1120.81,0,0,,1,Card,DSL,Tier 3
+C0248,19,1216.55,2,0,1.0,1,UPI,Mobile,Tier 2
+C0249,43,1072.84,1,1,1.0,0,Card,DSL,Tier 2
+C0250,40,1253.47,1,0,4.0,0,UPI,,Tier 2
+C0251,44,1993.05,1,1,4.0,1,Card,Mobile,Tier 2
+C0252,13,1264.24,2,0,5.0,1,UPI,DSL,Tier 2
+C0253,54,1384.68,2,0,2.0,1,UPI,Mobile,Tier 2
+C0254,42,937.59,2,1,2.0,1,Card,Fiber,Tier 3
+C0255,24,1101.2,0,1,5.0,0,Card,Mobile,Tier 3
+C0256,71,1991.34,2,0,3.0,0,Card,DSL,Metro
+C0257,71,1670.53,0,0,3.0,1,Card,Fiber,Metro
+C0258,48,2055.6,1,1,2.0,1,UPI,Fiber,Tier 3
+C0259,28,1024.43,4,1,1.0,1,UPI,DSL,Metro
+C0260,25,671.52,0,0,3.0,1,UPI,,Tier 3
+C0261,18,2371.84,1,0,5.0,1,Bank Transfer,Fiber,Metro
+C0262,52,658.91,3,0,2.0,1,Card,DSL,Tier 2
+C0263,27,1034.1,1,0,3.0,1,Card,Fiber,Metro
+C0264,48,1529.02,2,1,3.0,1,Card,Fiber,Metro
+C0265,54,1184.19,1,0,2.0,1,UPI,Fiber,Tier 3
+C0266,54,2034.26,2,0,5.0,1,UPI,Fiber,Tier 2
+C0267,54,1699.0,0,0,5.0,0,Bank Transfer,Fiber,Metro
+C0268,5,2304.08,1,0,2.0,1,UPI,Mobile,Tier 3
+C0269,10,942.97,4,0,3.0,1,Card,Mobile,Metro
+C0270,62,2263.08,0,1,5.0,0,Bank Transfer,Mobile,Tier 2
+C0271,55,1236.61,0,1,1.0,0,Bank Transfer,Fiber,Metro
+C0272,18,820.05,2,0,2.0,1,Card,Fiber,Tier 2
+C0273,6,1300.34,1,0,3.0,0,Card,Fiber,Metro
+C0274,12,356.85,0,1,5.0,0,UPI,Mobile,Metro
+C0275,45,945.31,0,0,1.0,1,Card,DSL,Tier 3
+C0276,37,767.9,2,1,3.0,1,Card,Fiber,Metro
+C0277,17,2298.75,1,0,5.0,0,UPI,Mobile,Tier 3
+C0278,1,2388.52,1,0,5.0,1,Bank Transfer,DSL,Tier 2
+C0279,23,433.98,1,0,1.0,1,Card,Fiber,Metro
+C0280,4,1664.37,1,0,4.0,1,,Mobile,Tier 3
+C0281,8,586.77,3,1,1.0,1,Bank Transfer,DSL,Tier 3
+C0282,69,2348.67,2,0,5.0,0,Bank Transfer,Fiber,Tier 2
+C0283,49,830.07,1,1,1.0,0,Bank Transfer,Mobile,Tier 3
+C0284,49,1842.43,0,1,4.0,0,,DSL,Tier 2
+C0285,37,,1,1,5.0,0,Bank Transfer,Mobile,Tier 3
+C0286,6,2150.69,1,0,5.0,0,Bank Transfer,DSL,Tier 2
+C0287,62,2197.3,0,0,4.0,1,Card,Mobile,Metro
+C0288,56,,1,1,2.0,0,Bank Transfer,Fiber,Tier 2
+C0289,71,716.87,1,1,3.0,0,UPI,DSL,Tier 2
+C0290,40,1370.71,4,0,2.0,1,UPI,Fiber,Tier 2
+C0291,55,1038.29,2,1,5.0,0,UPI,DSL,Metro
+C0292,7,610.37,0,1,1.0,1,UPI,Fiber,Tier 3
+C0293,29,1592.82,2,0,4.0,1,Card,Mobile,Metro
+C0294,12,1783.9,0,1,4.0,1,Bank Transfer,DSL,Metro
+C0295,43,838.09,2,0,2.0,1,Bank Transfer,Mobile,Tier 2
+C0296,40,1584.59,1,1,1.0,1,Card,Mobile,Tier 3
+C0297,24,364.12,1,1,1.0,0,UPI,DSL,Tier 3
+C0298,71,549.98,3,1,2.0,0,UPI,DSL,Metro
+C0299,67,2314.11,3,1,1.0,0,UPI,DSL,Tier 2
+C0300,27,580.37,2,1,1.0,0,UPI,Mobile,Metro
+C0301,56,1416.24,2,1,4.0,0,Bank Transfer,DSL,Metro
+C0302,64,603.81,1,0,5.0,0,Card,Fiber,Tier 3
+C0303,65,363.69,3,1,3.0,0,UPI,DSL,Metro
+C0304,34,771.91,1,0,2.0,0,UPI,Mobile,Tier 3
+C0305,59,716.71,1,1,2.0,0,UPI,Fiber,Tier 3
+C0306,13,1888.7,0,0,5.0,1,Bank Transfer,DSL,Tier 3
+C0307,11,1848.47,1,1,5.0,0,Bank Transfer,DSL,Metro
+C0308,47,1586.41,2,1,1.0,0,UPI,Mobile,Tier 2
+C0309,19,1518.95,2,1,5.0,1,UPI,Mobile,Tier 2
+C0310,63,2239.27,2,0,3.0,1,UPI,DSL,Tier 3
+C0311,25,2172.14,0,1,3.0,1,Bank Transfer,Mobile,Tier 2
+C0312,65,1382.1,1,1,1.0,1,UPI,Fiber,Tier 2
+C0313,11,1978.19,1,1,5.0,0,Card,Fiber,Tier 2
+C0314,40,357.79,1,0,3.0,1,UPI,Mobile,Tier 3
+C0315,25,1727.19,1,1,2.0,1,UPI,Mobile,Metro
+C0316,18,780.65,2,0,1.0,1,UPI,DSL,Tier 2
+C0317,17,1292.3,0,1,1.0,1,Card,Fiber,Tier 3
+C0318,25,975.9,1,1,5.0,0,UPI,Fiber,Metro
+C0319,40,564.97,1,1,3.0,0,UPI,DSL,Tier 2
+C0320,13,435.54,1,0,5.0,0,UPI,Fiber,Tier 2
+C0321,39,2333.08,4,1,5.0,1,Card,Mobile,Tier 3
+C0322,13,839.74,1,1,3.0,1,UPI,Fiber,Tier 2
+C0323,42,842.25,1,1,5.0,0,Card,Mobile,Metro
+C0324,41,1771.85,3,1,3.0,1,Bank Transfer,DSL,Tier 2
+C0325,50,369.08,4,0,4.0,1,UPI,DSL,Tier 2
+C0326,16,1555.88,2,0,1.0,1,UPI,DSL,Tier 2
+C0327,3,1085.64,0,0,3.0,1,Card,,Metro
+C0328,55,472.95,0,1,,0,Bank Transfer,DSL,Tier 3
+C0329,69,447.19,0,0,1.0,1,Card,DSL,Tier 2
+C0330,61,2239.75,1,1,2.0,0,UPI,Mobile,Tier 3
+C0331,66,2137.46,2,0,2.0,1,Bank Transfer,Mobile,Tier 3
+C0332,65,2126.7,1,0,5.0,0,UPI,Mobile,Tier 3
+C0333,33,596.36,1,0,3.0,0,,Mobile,Tier 2
+C0334,50,2157.83,2,0,2.0,1,UPI,Fiber,Metro
+C0335,26,756.01,1,0,4.0,0,UPI,DSL,Tier 3
+C0336,25,582.7,2,0,3.0,1,UPI,Fiber,Metro
+C0337,42,1558.96,0,0,3.0,1,UPI,Mobile,Tier 2
+C0338,24,2125.55,0,1,3.0,1,UPI,Mobile,Tier 3
+C0339,15,2194.36,2,0,1.0,1,Card,DSL,Tier 2
+C0340,62,411.25,1,1,2.0,0,UPI,Fiber,Metro
+C0341,37,2191.07,2,0,2.0,1,UPI,Fiber,Tier 2
+C0342,57,1102.9,2,0,5.0,1,Bank Transfer,Mobile,Metro
+C0343,38,842.93,4,0,5.0,1,UPI,DSL,Metro
+C0344,61,2146.83,5,0,1.0,1,UPI,Mobile,Metro
+C0345,41,1591.35,0,1,3.0,1,Bank Transfer,Mobile,Tier 2
+C0346,57,425.64,1,1,2.0,0,UPI,Fiber,Tier 3
+C0347,20,1992.16,1,1,4.0,1,UPI,Fiber,Tier 3
+C0348,65,,1,0,4.0,0,Card,DSL,Tier 2
+C0349,33,2155.7,2,0,4.0,1,UPI,DSL,Tier 2
+C0350,7,431.75,1,0,2.0,0,Card,DSL,Tier 2
+C0351,35,1285.1,0,0,2.0,0,UPI,DSL,Tier 3
+C0352,12,1059.25,0,0,2.0,1,UPI,DSL,Tier 2
+C0353,10,532.77,1,1,1.0,0,UPI,Mobile,Tier 2
+C0354,5,1727.86,1,1,5.0,0,UPI,Fiber,Metro
+C0355,31,875.8,1,0,2.0,1,UPI,Mobile,Tier 2
+C0356,43,1307.2,2,0,,0,Card,Mobile,Tier 3
+C0357,55,2139.78,3,1,3.0,1,Bank Transfer,Fiber,Metro
+C0358,35,408.99,0,0,5.0,0,UPI,Mobile,Metro
+C0359,43,391.08,0,0,2.0,1,Bank Transfer,Fiber,Tier 3
+C0360,69,723.15,2,0,3.0,0,Bank Transfer,Mobile,Metro
+C0361,42,1235.86,2,1,3.0,0,UPI,DSL,Metro
+C0362,31,2076.79,2,1,2.0,1,UPI,DSL,Metro
+C0363,19,507.48,1,0,1.0,1,Card,Fiber,Tier 3
+C0364,27,1354.16,1,1,5.0,0,Bank Transfer,DSL,Metro
+C0365,32,1852.97,0,1,3.0,0,UPI,DSL,Tier 3
+C0366,4,1965.43,4,0,2.0,1,UPI,Mobile,Tier 2
+C0367,62,1147.72,1,1,1.0,0,Card,Fiber,Metro
+C0368,66,1059.97,2,1,5.0,0,Bank Transfer,Mobile,Metro
+C0369,24,774.55,1,0,1.0,0,UPI,Fiber,Tier 3
+C0370,3,1942.85,0,1,3.0,1,Bank Transfer,DSL,Metro
+C0371,17,883.66,0,0,5.0,0,Bank Transfer,Fiber,Tier 3
+C0372,53,,3,0,4.0,1,,DSL,Tier 2
+C0373,56,563.68,2,0,5.0,0,UPI,DSL,Metro
+C0374,27,949.8,3,0,4.0,1,UPI,Fiber,Metro
+C0375,7,919.7,1,1,5.0,0,Card,Fiber,Tier 3
+C0376,30,1372.44,4,0,1.0,1,Bank Transfer,Mobile,Tier 3
+C0377,67,2350.5,0,0,2.0,1,Card,Fiber,Tier 3
+C0378,41,1812.23,2,0,3.0,0,Bank Transfer,Mobile,Tier 3
+C0379,59,1582.88,0,1,5.0,0,Card,Fiber,Tier 3
+C0380,49,1864.3,2,0,4.0,1,UPI,DSL,Metro
+C0381,46,1255.19,2,1,3.0,0,UPI,,Tier 3
+C0382,16,556.1,0,1,2.0,0,Bank Transfer,Fiber,Tier 2
+C0383,41,525.83,2,0,1.0,1,Bank Transfer,DSL,Tier 2
+C0384,13,1908.01,2,0,5.0,0,,DSL,Metro
+C0385,59,2080.88,2,0,1.0,1,Card,Fiber,Metro
+C0386,32,1061.47,1,0,3.0,1,Bank Transfer,Mobile,Tier 2
+C0387,3,2064.99,2,1,3.0,1,Card,DSL,Tier 2
+C0388,16,1680.52,3,0,4.0,0,Card,Fiber,Tier 2
+C0389,32,778.21,2,0,5.0,1,Bank Transfer,,Tier 3
+C0390,28,1264.67,3,0,3.0,1,Card,Fiber,Tier 2
+C0391,51,1087.18,0,1,2.0,0,Card,DSL,Tier 2
+C0392,22,622.67,1,0,1.0,1,Bank Transfer,DSL,Tier 2
+C0393,19,2339.3,2,0,4.0,1,Card,DSL,Tier 3
+C0394,33,652.34,3,1,3.0,1,Card,Mobile,Metro
+C0395,69,594.29,0,1,5.0,0,UPI,Mobile,Tier 2
+C0396,72,1354.28,0,1,1.0,0,Card,DSL,Metro
+C0397,5,2127.87,2,1,4.0,1,UPI,DSL,Metro
+C0398,23,2065.1,3,0,3.0,1,Bank Transfer,DSL,Tier 2
+C0399,44,685.53,1,1,3.0,0,UPI,Fiber,Tier 3
+C0400,18,2208.21,3,0,3.0,1,UPI,Fiber,Tier 3
+C0401,64,1163.73,0,1,1.0,0,UPI,DSL,Metro
+C0402,12,812.01,2,1,3.0,1,Card,Fiber,Tier 3
+C0403,67,1044.34,1,0,4.0,0,UPI,Mobile,Tier 3
+C0404,3,658.82,2,0,5.0,1,Bank Transfer,DSL,Tier 3
+C0405,71,1563.12,1,0,2.0,1,Card,DSL,Metro
+C0406,44,502.5,0,0,3.0,0,UPI,Fiber,Tier 3
+C0407,57,1374.77,0,1,3.0,0,Card,DSL,Tier 2
+C0408,49,397.6,1,0,5.0,0,Bank Transfer,DSL,Metro
+C0409,17,1230.87,3,1,3.0,1,Card,Fiber,Tier 3
+C0410,24,1063.22,4,0,2.0,1,Bank Transfer,Mobile,Tier 2
+C0411,30,899.49,1,0,4.0,0,UPI,DSL,Metro
+C0412,66,767.39,1,0,5.0,0,UPI,Mobile,Tier 3
+C0413,36,2150.79,0,0,,1,UPI,DSL,Tier 2
+C0414,52,1035.11,1,1,3.0,0,Card,DSL,Tier 3
+C0415,14,867.89,1,1,5.0,1,UPI,Mobile,Metro
+C0416,59,786.1,3,1,1.0,1,Card,Mobile,Metro
+C0417,2,2217.13,3,0,5.0,1,UPI,DSL,Tier 3
+C0418,68,778.57,1,1,3.0,0,Card,Mobile,Metro
+C0419,3,,1,1,5.0,1,,Fiber,Tier 2
+C0420,9,1421.98,1,1,2.0,1,Bank Transfer,Fiber,Metro
+C0421,1,790.42,2,1,4.0,0,UPI,Mobile,Metro
+C0422,41,2198.5,0,0,1.0,1,UPI,Mobile,Metro
+C0423,49,2290.42,0,1,2.0,1,Card,DSL,Tier 3
+C0424,15,1722.94,1,1,4.0,1,UPI,DSL,Metro
+C0425,32,,1,0,5.0,0,UPI,DSL,Tier 2
+C0426,59,1412.85,1,1,2.0,1,Card,Fiber,Metro
+C0427,39,1565.94,0,0,5.0,0,Card,Mobile,Metro
+C0428,48,2034.61,1,1,3.0,1,Card,Fiber,Tier 2
+C0429,66,1518.92,3,1,1.0,0,UPI,DSL,Tier 2
+C0430,51,1624.91,2,1,4.0,1,Card,DSL,Tier 2
+C0431,46,557.73,3,1,4.0,0,Card,Mobile,Metro
+C0432,25,,1,1,3.0,1,UPI,Mobile,Tier 3
+C0433,44,595.27,0,1,5.0,0,UPI,Fiber,Tier 3
+C0434,60,598.13,1,0,2.0,1,Bank Transfer,DSL,Tier 3
+C0435,5,663.32,4,0,2.0,1,Card,Fiber,Tier 3
+C0436,30,351.2,1,0,3.0,1,UPI,Fiber,Tier 3
+C0437,59,971.41,0,0,5.0,0,UPI,DSL,Tier 3
+C0438,36,2181.63,1,0,3.0,1,UPI,Mobile,Tier 2
+C0439,48,1288.03,2,0,3.0,1,Card,DSL,Tier 3
+C0440,28,,5,1,2.0,1,Bank Transfer,DSL,Metro
+C0441,31,1002.48,1,0,4.0,0,Card,Fiber,Tier 3
+C0442,14,1534.22,0,0,3.0,1,UPI,Mobile,Tier 2
+C0443,57,2147.05,3,0,2.0,1,Card,Mobile,Tier 2
+C0444,17,1441.85,1,1,4.0,0,Card,Fiber,Tier 3
+C0445,4,2015.97,1,1,1.0,1,Card,,Tier 2
+C0446,25,1890.52,1,0,1.0,1,UPI,DSL,Metro
+C0447,32,2250.57,1,0,5.0,1,UPI,Fiber,Tier 2
+C0448,32,1910.96,0,1,2.0,1,UPI,DSL,Metro
+C0449,13,1491.06,2,0,2.0,1,UPI,Fiber,Metro
+C0450,55,1740.75,0,0,4.0,0,Bank Transfer,DSL,Tier 2
+C0451,43,,0,0,1.0,1,Bank Transfer,Fiber,Tier 2
+C0452,4,1111.29,1,0,2.0,1,Card,Mobile,Metro
+C0453,25,1341.27,1,1,3.0,0,,DSL,Metro
+C0454,15,1937.48,1,1,3.0,1,UPI,Mobile,Tier 2
+C0455,47,630.19,0,0,2.0,1,Bank Transfer,,Metro
+C0456,20,1892.29,1,0,5.0,1,Card,Mobile,Metro
+C0457,40,467.2,3,0,5.0,1,UPI,DSL,Tier 3
+C0458,53,1896.62,0,1,3.0,0,Card,DSL,Tier 2
+C0459,5,2038.56,2,1,2.0,1,UPI,Fiber,Metro
+C0460,18,2290.57,0,1,4.0,0,Bank Transfer,Mobile,Tier 3
+C0461,36,397.25,1,1,3.0,0,Card,Mobile,Tier 2
+C0462,44,2300.35,3,0,5.0,1,UPI,Mobile,Tier 2
+C0463,28,763.9,1,1,1.0,0,UPI,DSL,Metro
+C0464,36,2339.42,0,1,5.0,0,Card,DSL,Tier 3
+C0465,14,1811.02,2,0,2.0,1,Card,DSL,Tier 2
+C0466,9,1606.19,4,1,1.0,1,UPI,Fiber,Tier 2
+C0467,38,1905.85,5,1,3.0,1,Bank Transfer,Fiber,Tier 2
+C0468,38,1526.57,0,0,3.0,1,Card,Fiber,Tier 2
+C0469,41,1182.28,0,1,1.0,0,UPI,DSL,Tier 2
+C0470,70,2258.88,0,0,1.0,0,UPI,Fiber,Tier 3
+C0471,39,1302.55,1,0,2.0,0,Card,Fiber,Tier 3
+C0472,38,2160.23,0,1,5.0,0,Card,DSL,Metro
+C0473,24,,1,1,1.0,1,Card,Fiber,Tier 2
+C0474,61,394.6,2,0,2.0,0,Card,Mobile,Tier 2
+C0475,29,1772.1,2,1,4.0,0,Card,Mobile,Metro
+C0476,69,1843.21,3,0,4.0,1,UPI,Fiber,Tier 3
+C0477,51,1340.8,3,0,1.0,1,Card,DSL,Metro
+C0478,55,1041.94,0,0,,1,UPI,DSL,Metro
+C0479,47,1424.45,4,0,3.0,0,UPI,DSL,Tier 3
+C0480,70,602.29,0,0,5.0,0,Card,Mobile,Tier 3
+C0481,38,1057.21,2,0,1.0,1,UPI,Fiber,Tier 2
+C0482,32,1691.92,1,0,4.0,1,Card,Fiber,Tier 3
+C0483,56,1840.48,3,0,,1,UPI,Mobile,Tier 3
+C0484,8,501.07,0,0,2.0,0,UPI,Fiber,Tier 2
+C0485,25,1830.31,1,0,1.0,1,UPI,Fiber,Metro
+C0486,48,1236.09,1,1,3.0,0,UPI,Mobile,Tier 3
+C0487,39,369.36,1,0,4.0,0,UPI,DSL,Tier 3
+C0488,10,1441.71,0,1,4.0,0,UPI,Fiber,Metro
+C0489,34,1296.27,3,1,4.0,1,UPI,,Metro
+C0490,49,2103.01,1,0,2.0,1,UPI,Fiber,Metro
+C0491,31,1297.75,3,1,5.0,1,Bank Transfer,Mobile,Tier 3
+C0492,13,2393.62,1,0,1.0,1,Card,DSL,Tier 2
+C0493,68,1222.36,4,0,2.0,1,Bank Transfer,DSL,Tier 2
+C0494,3,1523.7,0,0,,0,Card,Fiber,Metro
+C0495,67,882.2,0,1,1.0,1,UPI,DSL,Tier 2
+C0496,48,2089.17,4,1,1.0,1,UPI,Mobile,Tier 2
+C0497,59,366.66,1,0,5.0,0,Bank Transfer,Mobile,Tier 3
+C0498,3,2390.33,2,1,3.0,0,UPI,DSL,Tier 2
+C0499,23,557.06,1,0,5.0,1,,Mobile,Tier 3
+C0500,56,1017.48,1,1,1.0,1,Card,DSL,Tier 3

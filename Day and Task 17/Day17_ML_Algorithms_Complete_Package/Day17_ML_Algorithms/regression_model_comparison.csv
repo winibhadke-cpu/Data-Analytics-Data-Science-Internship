@@ -1,0 +1,3 @@
+Model,MAE_INR,RMSE_INR,R2
+Linear Regression,542276.41,696872.96,0.9598
+Decision Tree Regressor,665151.37,819515.41,0.9444

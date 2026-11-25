@@ -1,0 +1,12 @@
+-- Power BI table name: RetailSales
+Total Sales = SUM(RetailSales[Sales])
+Total Orders = DISTINCTCOUNT(RetailSales[Order_ID])
+Total Customers = DISTINCTCOUNT(RetailSales[Customer_Name])
+Average Order Value = DIVIDE([Total Sales], [Total Orders], 0)
+Total Units = SUM(RetailSales[Quantity])
+Average Customer Rating = AVERAGE(RetailSales[Customer_Rating])
+Sales Share % = DIVIDE([Total Sales], CALCULATE([Total Sales], ALL(RetailSales[Category])), 0)
+Sales Last Available Date = MAX(RetailSales[Order_Date])
+-- Calculated columns (New column, not New measure):
+Month Start = DATE(YEAR(RetailSales[Order_Date]), MONTH(RetailSales[Order_Date]), 1)
+Month Year = FORMAT(RetailSales[Order_Date], "MMM yyyy")

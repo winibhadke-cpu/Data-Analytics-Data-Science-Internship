@@ -1,0 +1,7 @@
+Customer_Name,Revenue,Orders,Average_Order_Value,Customer_Type,Contribution_Pct,Segment
+Priya,17780,5,3556.0,Repeat,21.717356785147185,High Value
+Asha,14240,5,2848.0,Repeat,17.393428606327106,Medium Value
+Vikram,13350,5,2670.0,Repeat,16.306339318431657,Medium Value
+Rahul,13350,5,2670.0,Repeat,16.306339318431657,Medium Value
+Arjun,12450,5,2490.0,Repeat,15.207035544155367,Medium Value
+Neha,10700,5,2140.0,Repeat,13.069500427507021,Medium Value

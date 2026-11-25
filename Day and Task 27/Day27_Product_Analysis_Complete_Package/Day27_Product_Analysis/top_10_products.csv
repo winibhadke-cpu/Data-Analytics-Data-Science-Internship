@@ -1,0 +1,5 @@
+Category,Product,Sales,Orders,Quantity,Revenue_Contribution_Pct,Average_Order_Value,Revenue_Rank,Profit,Profit_Margin,Decline_Status
+Electronics,Headphones,36000,7,24,43.97215097105167,5142.857142857143,1,,,Unavailable: one month
+Home,Lamp,24200,7,22,29.5590570416514,3457.1428571428573,2,,,Unavailable: one month
+Clothing,T-Shirt,14950,8,23,18.26065713936729,1868.75,3,,,Unavailable: one month
+Grocery,Rice,6720,8,21,8.208134847929644,840.0,4,,,Unavailable: one month

@@ -1,0 +1,8 @@
+Total Revenue = SUM(RetailSales[Sales])
+Total Orders = DISTINCTCOUNT(RetailSales[Order_ID])
+Total Units = SUM(RetailSales[Quantity])
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+Unique Customers = DISTINCTCOUNT(RetailSales[Customer_Name])
+Average Rating = AVERAGE(RetailSales[Customer_Rating])
+Electronics Revenue = CALCULATE([Total Revenue], RetailSales[Category] = "Electronics")
+Revenue Share = DIVIDE([Total Revenue], CALCULATE([Total Revenue], ALL(RetailSales[Category])))

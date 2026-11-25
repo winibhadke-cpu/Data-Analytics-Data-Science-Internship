@@ -1,0 +1,35 @@
+CREATE DATABASE IF NOT EXISTS retail_day28;
+USE retail_day28;
+DROP TABLE IF EXISTS retail_sales;
+CREATE TABLE retail_sales (Order_ID VARCHAR(30) PRIMARY KEY, Order_Date DATE, Customer_Name VARCHAR(100), City VARCHAR(100), Category VARCHAR(100), Product VARCHAR(100), Quantity INT, Unit_Price DECIMAL(12,2), Sales DECIMAL(12,2), Profit DECIMAL(12,2));
+INSERT INTO retail_sales VALUES
+('ORD001', '2026-10-02', 'Rahul', 'Mumbai', 'Clothing', 'T-Shirt', 2, 650, 1300, NULL),
+('ORD002', '2026-10-03', 'Neha', 'Nagpur', 'Grocery', 'Rice', 3, 320, 960, NULL),
+('ORD003', '2026-10-04', 'Vikram', 'Nashik', 'Home', 'Lamp', 4, 1100, 4400, NULL),
+('ORD004', '2026-10-05', 'Priya', 'Pune', 'Electronics', 'Headphones', 5, 1500, 7500, NULL),
+('ORD005', '2026-10-06', 'Arjun', 'Pune', 'Clothing', 'T-Shirt', 1, 650, 650, NULL),
+('ORD006', '2026-10-07', 'Asha', 'Mumbai', 'Grocery', 'Rice', 2, 320, 640, NULL),
+('ORD007', '2026-10-08', 'Rahul', 'Nagpur', 'Home', 'Lamp', 3, 1100, 3300, NULL),
+('ORD008', '2026-10-09', 'Neha', 'Nashik', 'Electronics', 'Headphones', 4, 1500, 6000, NULL),
+('ORD009', '2026-10-10', 'Vikram', 'Pune', 'Clothing', 'T-Shirt', 5, 650, 3250, NULL),
+('ORD010', '2026-10-11', 'Priya', 'Pune', 'Grocery', 'Rice', 1, 320, 320, NULL),
+('ORD011', '2026-10-12', 'Arjun', 'Mumbai', 'Home', 'Lamp', 2, 1100, 2200, NULL),
+('ORD012', '2026-10-13', 'Asha', 'Nagpur', 'Electronics', 'Headphones', 3, 1500, 4500, NULL),
+('ORD013', '2026-10-14', 'Rahul', 'Nashik', 'Clothing', 'T-Shirt', 4, 650, 2600, NULL),
+('ORD014', '2026-10-15', 'Neha', 'Pune', 'Grocery', 'Rice', 5, 320, 1600, NULL),
+('ORD015', '2026-10-16', 'Vikram', 'Pune', 'Home', 'Lamp', 1, 1100, 1100, NULL),
+('ORD016', '2026-10-17', 'Priya', 'Mumbai', 'Electronics', 'Headphones', 2, 1500, 3000, NULL),
+('ORD017', '2026-10-18', 'Arjun', 'Nagpur', 'Clothing', 'T-Shirt', 3, 650, 1950, NULL),
+('ORD018', '2026-10-19', 'Asha', 'Nashik', 'Grocery', 'Rice', 4, 320, 1280, NULL),
+('ORD019', '2026-10-20', 'Rahul', 'Pune', 'Home', 'Lamp', 5, 1100, 5500, NULL),
+('ORD020', '2026-10-21', 'Neha', 'Pune', 'Electronics', 'Headphones', 1, 1500, 1500, NULL),
+('ORD021', '2026-10-22', 'Vikram', 'Mumbai', 'Clothing', 'T-Shirt', 2, 650, 1300, NULL),
+('ORD022', '2026-10-23', 'Priya', 'Nagpur', 'Grocery', 'Rice', 3, 320, 960, NULL),
+('ORD023', '2026-10-24', 'Arjun', 'Nashik', 'Home', 'Lamp', 4, 1100, 4400, NULL),
+('ORD024', '2026-10-25', 'Asha', 'Pune', 'Electronics', 'Headphones', 5, 1500, 7500, NULL),
+('ORD025', '2026-10-26', 'Rahul', 'Pune', 'Clothing', 'T-Shirt', 1, 650, 650, NULL),
+('ORD026', '2026-10-27', 'Neha', 'Mumbai', 'Grocery', 'Rice', 2, 320, 640, NULL),
+('ORD027', '2026-10-28', 'Vikram', 'Nagpur', 'Home', 'Lamp', 3, 1100, 3300, NULL),
+('ORD028', '2026-10-01', 'Priya', 'Nashik', 'Electronics', 'Headphones', 4, 1500, 6000, NULL),
+('ORD029', '2026-10-02', 'Arjun', 'Pune', 'Clothing', 'T-Shirt', 5, 650, 3250, NULL),
+('ORD030', '2026-10-03', 'Asha', 'Pune', 'Grocery', 'Rice', 1, 320, 320, NULL);

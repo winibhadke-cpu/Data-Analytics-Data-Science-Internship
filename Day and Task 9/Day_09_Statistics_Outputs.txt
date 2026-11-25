@@ -1,0 +1,122 @@
+>>> import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from pathlib import Path
+pd.set_option('display.max_columns', 12)
+df = pd.read_csv('Day09_Statistics_Dataset.csv', parse_dates=['OrderDate'])
+print('Shape:', df.shape)
+print(df.head(5).to_string(index=False))
+print('Missing values:', int(df.isna().sum().sum()))
+
+Shape: (40, 8)
+OrderID  OrderDate    Category  Quantity  UnitPrice  DiscountPct  Revenue  CustomerRating
+  S1001 2026-09-02    Clothing         3       1200            0   3600.0               3
+  S1002 2026-09-03    Clothing        14        600           10   7560.0               3
+  S1003 2026-09-04        Home        10        250           10   2250.0               4
+  S1004 2026-09-05        Home        10        250           10   2250.0               2
+  S1005 2026-09-06 Electronics         8        250            5   1900.0               5
+Missing values: 0
+
+>>> result = df['Revenue'].mean()
+print('Mean:', result)
+
+Mean: 6679.0625
+
+>>> result = df['Revenue'].median()
+print('Median:', result)
+
+Median: 4695.0
+
+>>> result = df['Revenue'].mode().tolist()
+print('Mode:', result)
+
+Mode: [2250.0, 5100.0, 7560.0, 7650.0, 20400.0]
+
+>>> result = df['Revenue'].max() - df['Revenue'].min()
+print('Range:', result)
+
+Range: 19725.0
+
+>>> result = df['Revenue'].var(ddof=1)
+print('Variance:', result)
+
+Variance: 28258246.374198716
+
+>>> result = df['Revenue'].std(ddof=1)
+print('Standard deviation:', result)
+
+Standard deviation: 5315.84860339332
+
+>>> result = df['Revenue'].quantile([0.10, 0.25, 0.50, 0.75, 0.90]).to_dict()
+print('Percentiles:', result)
+
+Percentiles: {0.1: 1611.0, 0.25: 2967.5, 0.5: 4695.0, 0.75: 9285.0, 0.9: 13923.000000000002}
+
+>>> result = df['Revenue'].quantile([0.25, 0.50, 0.75]).to_dict()
+print('Quartiles:', result)
+
+Quartiles: {0.25: 2967.5, 0.5: 4695.0, 0.75: 9285.0}
+
+>>> result = df['Revenue'].quantile(.75) - df['Revenue'].quantile(.25)
+print('Interquartile range (IQR):', result)
+
+Interquartile range (IQR): 6317.5
+
+>>> result = df['Quantity'].corr(df['Revenue'])
+print('Correlation:', result)
+
+Correlation: 0.5879009351317247
+
+>>> result = df['Quantity'].cov(df['Revenue'])
+print('Covariance:', result)
+
+Covariance: 16010.673076923076
+
+>>> q1, q3 = df['Revenue'].quantile([.25, .75])
+iqr = q3-q1
+lower, upper = q1-1.5*iqr, q3+1.5*iqr
+outliers = df[(df['Revenue']<lower)|(df['Revenue']>upper)]
+print(f'Q1={q1:.2f}, Q3={q3:.2f}, IQR={iqr:.2f}, fences=({lower:.2f}, {upper:.2f})')
+print('Potential outliers:',len(outliers))
+print(outliers[['OrderID','Revenue']].to_string(index=False))
+
+Q1=2967.50, Q3=9285.00, IQR=6317.50, fences=(-6508.75, 18761.25)
+Potential outliers: 2
+OrderID  Revenue
+  S1012  20400.0
+  S1038  20400.0
+
+>>> fig, ax=plt.subplots(figsize=(8,4))
+ax.hist(df['Revenue'],bins=10,edgecolor='white')
+ax.set(title='Order Revenue Distribution',xlabel='Revenue (INR)',ylabel='Order count')
+fig.tight_layout(); fig.savefig('Day09_Revenue_Histogram.png',dpi=150); plt.show()
+
+>>> fig, ax=plt.subplots(figsize=(8,3))
+ax.boxplot(df['Revenue'],vert=False)
+ax.set(title='Order Revenue Boxplot',xlabel='Revenue (INR)')
+fig.tight_layout();fig.savefig('Day09_Revenue_Boxplot.png',dpi=150);plt.show()
+
+>>> fig, ax=plt.subplots(figsize=(8,4))
+ax.scatter(df['Quantity'],df['Revenue'],alpha=.75)
+ax.set(title='Quantity vs Revenue',xlabel='Quantity (units)',ylabel='Revenue (INR)')
+fig.tight_layout();fig.savefig('Day09_Quantity_Revenue_Scatter.png',dpi=150);plt.show()
+
+>>> summary = pd.DataFrame({'Statistic':['Mean','Median','Mode(s)','Range','Sample variance','Sample standard deviation','10th percentile','25th percentile / Q1','50th percentile / Q2','75th percentile / Q3','90th percentile','IQR','Pearson correlation: Quantity/Revenue','Sample covariance: Quantity/Revenue'], 'Value':[df.Revenue.mean(),df.Revenue.median(),str(df.Revenue.mode().tolist()),df.Revenue.max()-df.Revenue.min(),df.Revenue.var(ddof=1),df.Revenue.std(ddof=1),df.Revenue.quantile(.1),df.Revenue.quantile(.25),df.Revenue.quantile(.5),df.Revenue.quantile(.75),df.Revenue.quantile(.9),iqr,df.Quantity.corr(df.Revenue),df.Quantity.cov(df.Revenue)]})
+print(summary.to_string(index=False))
+summary.to_csv('Day09_Statistics_Summary.csv',index=False)
+
+                            Statistic                                     Value
+                                 Mean                                 6679.0625
+                               Median                                    4695.0
+                              Mode(s) [2250.0, 5100.0, 7560.0, 7650.0, 20400.0]
+                                Range                                   19725.0
+                      Sample variance                           28258246.374199
+            Sample standard deviation                               5315.848603
+                      10th percentile                                    1611.0
+                 25th percentile / Q1                                    2967.5
+                 50th percentile / Q2                                    4695.0
+                 75th percentile / Q3                                    9285.0
+                      90th percentile                                   13923.0
+                                  IQR                                    6317.5
+Pearson correlation: Quantity/Revenue                                  0.587901
+  Sample covariance: Quantity/Revenue                              16010.673077

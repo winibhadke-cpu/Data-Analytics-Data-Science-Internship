@@ -1,0 +1,18 @@
+No.,Finding,Evidence,Business Impact
+1,Recorded revenue establishes a baseline,"INR 81,870.00 across 30 orders","Use as the October planning baseline, not an annual forecast."
+2,Average order value provides a basket benchmark,"INR 2,729.00",Evaluate future basket-building campaigns against this baseline.
+3,Mean customer spending exceeds average order value,"INR 13,645.00 per observed name",Customer-level spending is useful for loyalty planning.
+4,Top customer concentrates spending,"Priya: INR 17,780.00, 21.72% of revenue",Prioritize relationship continuity without assuming future loyalty.
+5,Lowest-spending customer offers a comparison point,"Neha: INR 10,700.00",Investigate basket preferences before targeting promotions.
+6,Purchase frequency is uniform across observed names,5–5 orders per name,Spending differences are driven by order value rather than observed frequency.
+7,Repeat purchasing is widespread,6/6 names (100.00%) placed multiple orders,Test loyalty initiatives; this is not a longitudinal retention rate.
+8,Medium-value segment dominates the observed base,"5 names; INR 64,090.00",Focus on upgrading medium-value baskets while preserving service.
+9,Top product drives revenue concentration,"Headphones: INR 36,000.00, 43.97%",Monitor stock availability and dependency on the leading product.
+10,Bottom product has low revenue contribution,"Rice: INR 6,720.00, 8.21%",Review price and demand; low revenue is not proof of low profit.
+11,Top two products dominate sales,"INR 60,200.00, 73.53%",Balance stock investment with diversification opportunities.
+12,Unit demand differs less than revenue,21–24 units per product; 90 total,Use quantity and revenue together for inventory planning.
+13,Leading category is a major revenue source,"Electronics: INR 36,000.00, 43.97%",Protect category availability and test complementary products.
+14,Leading city has substantial revenue concentration,"Pune: INR 33,140.00, 40.48%",Prioritize service coverage and monitor geographic dependency.
+15,Lowest-revenue city warrants investigation,"Mumbai: INR 9,080.00, 11.09%",Assess demand and distribution before increasing investment.
+16,Top two cities account for most recorded sales,"INR 57,820.00, 70.62%",Consider geographic diversification after validating market potential.
+17,Order values vary substantially,"Median INR 2,075.00; range INR 320.00 to INR 7,500.00",Use median alongside mean to avoid overestimating typical baskets.

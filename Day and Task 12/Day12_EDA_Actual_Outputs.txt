@@ -1,0 +1,45 @@
+DAY 12 - SEABORN ADVANCED EDA - ACTUAL VERIFIED RESULTS
+
+Rows and columns: (30, 10)
+Missing values:
+ Order_ID           0
+Order_Date         0
+Customer_Name      0
+City               0
+Category           0
+Product            0
+Quantity           0
+Unit_Price         0
+Sales              0
+Customer_Rating    3
+Duplicate Order_IDs: 0
+
+Total revenue: 81870
+
+Q1=995.00, Q3=4125.00, IQR=3130.00
+Lower fence=-3700.00, Upper fence=8820.00
+Outlier count: 0
+
+1. Total revenue is INR 81,870 across 30 orders; average order sales are INR 2,729.00.
+2. Electronics leads category revenue with INR 36,000 (44.0% of total).
+3. Grocery has the lowest category revenue at INR 6,720.
+4. Pune leads city revenue with INR 33,140 from 12 orders.
+5. The most frequent category is Clothing with 8 orders.
+6. Sales median is INR 2,075; Q1=INR 995, Q3=INR 4,125, IQR=INR 3,130.
+7. IQR lower fence is INR -3,700 and upper fence is INR 8,820; 0 records are flagged.
+8. Quantity and sales correlation is 0.715; correlation does not prove causation.
+9. Unit price and sales correlation is 0.771; sales equals quantity multiplied by unit price.
+10. Customer rating is missing for 3 orders (10.0%); missing values are excluded from rating analysis.
+
+
+TEN DATA-SUPPORTED OBSERVATIONS
+1. Total revenue is INR 81,870 across 30 orders; mean order sales are INR 2,729.00.
+2. Electronics leads category revenue with INR 36,000 (44.0% of total).
+3. Grocery has the lowest category revenue at INR 6,720.
+4. Pune leads city revenue with INR 33,140 from 12 orders.
+5. The most frequent product category is Clothing with 8 orders.
+6. Sales median is INR 2,075; Q1 = INR 995, Q3 = INR 4,125, and IQR = INR 3,130.
+7. The IQR upper fence is INR 8,820 and lower fence is INR -3,700; 0 sales records fall outside these fences.
+8. Quantity and sales have Pearson correlation 0.715; correlation is descriptive, not causal.
+9. Unit price and sales have Pearson correlation 0.771; both contribute mechanically to sales (quantity x unit price).
+10. Customer rating is missing for 3 of 30 orders (10.0%); rating charts exclude these missing values.

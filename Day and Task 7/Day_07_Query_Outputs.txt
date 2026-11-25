@@ -1,0 +1,330 @@
+DAY 7 - VERIFIED QUERY OUTPUTS
+SQLite execution of 28 MySQL-compatible queries; DATE_FORMAT translated to strftime for verification.
+MySQL Workbench output may format dates/decimals differently.
+
+QUERY 01: All customers
+customer_id | customer_name | city | email
+1 | Aarav Sharma | Pune | aarav@example.com
+2 | Priya Patil | Mumbai | priya@example.com
+3 | Neha Kulkarni | Pune | neha@example.com
+4 | Rahul Mehta | Nashik | rahul@example.com
+5 | Sneha Joshi | Pune | sneha@example.com
+6 | Kabir Shah | Nagpur | kabir@example.com
+7 | Isha Deshmukh | Mumbai | isha@example.com
+8 | Rohan Gupta | Pune | rohan@example.com
+9 | Ananya Rao | Kolhapur | ananya@example.com
+10 | Vivek Nair | Pune | vivek@example.com
+Rows returned: 10
+
+QUERY 02: Customers from Pune
+customer_id | customer_name | city
+1 | Aarav Sharma | Pune
+3 | Neha Kulkarni | Pune
+8 | Rohan Gupta | Pune
+5 | Sneha Joshi | Pune
+10 | Vivek Nair | Pune
+Rows returned: 5
+
+QUERY 03: Distinct customer cities
+city
+Kolhapur
+Mumbai
+Nagpur
+Nashik
+Pune
+Rows returned: 5
+
+QUERY 04: All products by price (high to low)
+product_id | product_name | unit_price
+101 | Laptop | 55000
+102 | Smartphone | 22000
+108 | Monitor | 12500
+104 | Office Chair | 7500
+103 | Headphones | 1800
+106 | Desk Lamp | 1600
+107 | Keyboard | 950
+105 | Notebook | 120
+Rows returned: 8
+
+QUERY 05: Electronics products
+product_name | unit_price
+Monitor | 12500
+Smartphone | 22000
+Laptop | 55000
+Rows returned: 3
+
+QUERY 06: Products priced between INR 1000 and INR 15000
+product_name | unit_price
+Desk Lamp | 1600
+Headphones | 1800
+Office Chair | 7500
+Monitor | 12500
+Rows returned: 4
+
+QUERY 07: All orders with calculated amounts
+order_id | quantity | product_name | order_amount
+1001 | 1 | Laptop | 55000
+1002 | 1 | Smartphone | 22000
+1003 | 2 | Headphones | 3600
+1004 | 5 | Notebook | 600
+1005 | 2 | Office Chair | 15000
+1006 | 1 | Monitor | 12500
+1007 | 3 | Keyboard | 2850
+1008 | 2 | Smartphone | 44000
+1009 | 2 | Desk Lamp | 3200
+1010 | 10 | Notebook | 1200
+1011 | 1 | Laptop | 55000
+1012 | 1 | Office Chair | 7500
+1013 | 3 | Headphones | 5400
+1014 | 2 | Monitor | 25000
+1015 | 1 | Keyboard | 950
+1016 | 1 | Smartphone | 22000
+1017 | 1 | Desk Lamp | 1600
+1018 | 2 | Headphones | 3600
+1019 | 1 | Laptop | 55000
+1020 | 1 | Office Chair | 7500
+1021 | 4 | Notebook | 480
+1022 | 1 | Smartphone | 22000
+1023 | 1 | Monitor | 12500
+1024 | 1 | Headphones | 1800
+1025 | 2 | Keyboard | 1900
+1026 | 1 | Office Chair | 7500
+1027 | 8 | Notebook | 960
+1028 | 1 | Monitor | 12500
+Rows returned: 28
+
+QUERY 08: Orders above INR 5000
+order_id | customer_name | order_amount
+1001 | Aarav Sharma | 55000
+1011 | Vivek Nair | 55000
+1019 | Isha Deshmukh | 55000
+1008 | Isha Deshmukh | 44000
+1014 | Priya Patil | 25000
+1002 | Priya Patil | 22000
+1016 | Aarav Sharma | 22000
+1022 | Sneha Joshi | 22000
+1005 | Rahul Mehta | 15000
+1006 | Sneha Joshi | 12500
+1023 | Neha Kulkarni | 12500
+1028 | Vivek Nair | 12500
+1012 | Neha Kulkarni | 7500
+1020 | Ananya Rao | 7500
+1026 | Aarav Sharma | 7500
+1013 | Sneha Joshi | 5400
+Rows returned: 16
+
+QUERY 09: Orders with customer and product names
+order_id | customer_name | product_name | quantity | order_date
+1001 | Aarav Sharma | Laptop | 1 | 2026-01-05
+1002 | Priya Patil | Smartphone | 1 | 2026-01-09
+1003 | Neha Kulkarni | Headphones | 2 | 2026-01-12
+1004 | Aarav Sharma | Notebook | 5 | 2026-02-02
+1005 | Rahul Mehta | Office Chair | 2 | 2026-02-11
+1006 | Sneha Joshi | Monitor | 1 | 2026-02-14
+1007 | Kabir Shah | Keyboard | 3 | 2026-03-01
+1008 | Isha Deshmukh | Smartphone | 2 | 2026-03-08
+1009 | Rohan Gupta | Desk Lamp | 2 | 2026-03-11
+1010 | Ananya Rao | Notebook | 10 | 2026-03-18
+1011 | Vivek Nair | Laptop | 1 | 2026-04-04
+1012 | Neha Kulkarni | Office Chair | 1 | 2026-04-09
+1013 | Sneha Joshi | Headphones | 3 | 2026-04-15
+1014 | Priya Patil | Monitor | 2 | 2026-05-03
+1015 | Rohan Gupta | Keyboard | 1 | 2026-05-08
+1016 | Aarav Sharma | Smartphone | 1 | 2026-05-14
+1017 | Rahul Mehta | Desk Lamp | 1 | 2026-06-02
+1018 | Kabir Shah | Headphones | 2 | 2026-06-12
+1019 | Isha Deshmukh | Laptop | 1 | 2026-07-06
+1020 | Ananya Rao | Office Chair | 1 | 2026-07-21
+1021 | Vivek Nair | Notebook | 4 | 2026-08-01
+1022 | Sneha Joshi | Smartphone | 1 | 2026-08-13
+1023 | Neha Kulkarni | Monitor | 1 | 2026-09-07
+1024 | Rohan Gupta | Headphones | 1 | 2026-09-20
+1025 | Priya Patil | Keyboard | 2 | 2026-10-05
+1026 | Aarav Sharma | Office Chair | 1 | 2026-10-17
+1027 | Kabir Shah | Notebook | 8 | 2026-11-02
+1028 | Vivek Nair | Monitor | 1 | 2026-11-10
+Rows returned: 28
+
+QUERY 10: Count customers
+total_customers
+10
+Rows returned: 1
+
+QUERY 11: Count orders
+total_orders
+28
+Rows returned: 1
+
+QUERY 12: Total sales revenue
+total_sales_inr
+403140
+Rows returned: 1
+
+QUERY 13: Average order value
+avg_order_value_inr
+14397.86
+Rows returned: 1
+
+QUERY 14: Minimum and maximum order amounts
+minimum_order_inr | maximum_order_inr
+480 | 55000
+Rows returned: 1
+
+QUERY 15: Orders per city
+city | order_count
+Pune | 16
+Mumbai | 5
+Nagpur | 3
+Kolhapur | 2
+Nashik | 2
+Rows returned: 5
+
+QUERY 16: Revenue by city
+city | revenue_inr
+Pune | 222530
+Mumbai | 147900
+Nashik | 16600
+Kolhapur | 8700
+Nagpur | 7410
+Rows returned: 5
+
+QUERY 17: Top 5 products by revenue
+product_name | units_sold | revenue_inr
+Laptop | 3 | 165000
+Smartphone | 5 | 110000
+Monitor | 5 | 62500
+Office Chair | 5 | 37500
+Headphones | 8 | 14400
+Rows returned: 5
+
+QUERY 18: Top 5 products by quantity
+product_name | units_sold
+Notebook | 27
+Headphones | 8
+Keyboard | 6
+Smartphone | 5
+Office Chair | 5
+Rows returned: 5
+
+QUERY 19: Revenue by category
+category | revenue_inr
+Electronics | 337500
+Furniture | 42300
+Accessories | 20100
+Stationery | 3240
+Rows returned: 4
+
+QUERY 20: Categories with revenue above INR 20000
+category | revenue_inr
+Electronics | 337500
+Furniture | 42300
+Accessories | 20100
+Rows returned: 3
+
+QUERY 21: Top 5 customers by spending
+customer_name | orders_placed | total_spent_inr
+Isha Deshmukh | 2 | 99000
+Aarav Sharma | 4 | 85100
+Vivek Nair | 3 | 67980
+Priya Patil | 3 | 48900
+Sneha Joshi | 3 | 39900
+Rows returned: 5
+
+QUERY 22: Monthly revenue
+order_month | revenue_inr
+2026-01 | 80600
+2026-02 | 28100
+2026-03 | 51250
+2026-04 | 67900
+2026-05 | 47950
+2026-06 | 5200
+2026-07 | 62500
+2026-08 | 22480
+2026-09 | 14300
+2026-10 | 9400
+2026-11 | 13460
+Rows returned: 11
+
+QUERY 23: CASE order value bands
+order_id | order_amount | value_band
+1001 | 55000 | High
+1002 | 22000 | High
+1003 | 3600 | Low
+1004 | 600 | Low
+1005 | 15000 | Medium
+1006 | 12500 | Medium
+1007 | 2850 | Low
+1008 | 44000 | High
+1009 | 3200 | Low
+1010 | 1200 | Low
+1011 | 55000 | High
+1012 | 7500 | Medium
+1013 | 5400 | Medium
+1014 | 25000 | High
+1015 | 950 | Low
+1016 | 22000 | High
+1017 | 1600 | Low
+1018 | 3600 | Low
+1019 | 55000 | High
+1020 | 7500 | Medium
+1021 | 480 | Low
+1022 | 22000 | High
+1023 | 12500 | Medium
+1024 | 1800 | Low
+1025 | 1900 | Low
+1026 | 7500 | Medium
+1027 | 960 | Low
+1028 | 12500 | Medium
+Rows returned: 28
+
+QUERY 24: Customers with at least 3 orders
+customer_name | order_count
+Aarav Sharma | 4
+Kabir Shah | 3
+Neha Kulkarni | 3
+Priya Patil | 3
+Rohan Gupta | 3
+Sneha Joshi | 3
+Vivek Nair | 3
+Rows returned: 7
+
+QUERY 25: Customer name starts with A
+customer_id | customer_name
+1 | Aarav Sharma
+9 | Ananya Rao
+Rows returned: 2
+
+QUERY 26: Orders placed in October 2026
+order_id | customer_id | order_date
+1025 | 2 | 2026-10-05
+1026 | 1 | 2026-10-17
+Rows returned: 2
+
+QUERY 27: Product count per category
+category | product_count
+Electronics | 3
+Accessories | 2
+Furniture | 2
+Stationery | 1
+Rows returned: 4
+
+QUERY 28: Pune customer orders
+order_id | customer_name | product_name | order_amount
+1001 | Aarav Sharma | Laptop | 55000
+1003 | Neha Kulkarni | Headphones | 3600
+1004 | Aarav Sharma | Notebook | 600
+1006 | Sneha Joshi | Monitor | 12500
+1009 | Rohan Gupta | Desk Lamp | 3200
+1011 | Vivek Nair | Laptop | 55000
+1012 | Neha Kulkarni | Office Chair | 7500
+1013 | Sneha Joshi | Headphones | 5400
+1015 | Rohan Gupta | Keyboard | 950
+1016 | Aarav Sharma | Smartphone | 22000
+1021 | Vivek Nair | Notebook | 480
+1022 | Sneha Joshi | Smartphone | 22000
+1023 | Neha Kulkarni | Monitor | 12500
+1024 | Rohan Gupta | Headphones | 1800
+1026 | Aarav Sharma | Office Chair | 7500
+1028 | Vivek Nair | Monitor | 12500
+Rows returned: 16
+

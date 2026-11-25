@@ -1,0 +1,1 @@
+MySQL 8: Open 00_Setup_MySQL.sql in Workbench and execute all. Open Day_28_Retail_Analysis.sql and execute all or one query at a time. Setup resets only retail_day28.retail_sales. CSV outputs were actually verified using SQLite, not MySQL. Profit is unknown; city and customer name are proxies. One month only; no growth baseline. No fabricated screenshots.

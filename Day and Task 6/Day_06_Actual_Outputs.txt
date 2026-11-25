@@ -1,0 +1,70 @@
+Shape before: (32, 10)
+Order_ID Order_Date Customer_Name   City   Category    Product Quantity Unit_Price Sales Customer_Rating
+  ORD001 2026-10-02         Rahul  pune    Clothing    T-Shirt        2        650  1300               5
+  ORD002 2026-10-03          Neha Nagpur    grocery       Rice        3        320   960               3
+  ORD003 2026-10-04        Vikram Nashik       HOME       Lamp        4       1100  4400               4
+  ORD004 2026-10-05         Priya   Pune Electronic Headphones        5       1500  7500               5
+  ORD005 2026-10-06         Arjun MUMBAI   Clothing    T-Shirt        1        650   650               4
+
+
+Order_ID           0
+Order_Date         0
+Customer_Name      1
+City               1
+Category           0
+Product            0
+Quantity           0
+Unit_Price         0
+Sales              1
+Customer_Rating    3
+
+
+Exact duplicates: 2
+Duplicate Order_IDs: 3
+Order_ID Sales
+  ORD001  1300
+  ORD002   960
+  ORD018  1280
+  ORD018  5500
+  ORD001  1300
+  ORD002   960
+
+
+Order_ID           string[python]
+Order_Date         datetime64[ns]
+Customer_Name      string[python]
+City               string[python]
+Category           string[python]
+Product            string[python]
+Quantity                  float64
+Unit_Price                float64
+Sales                     float64
+Customer_Rating           float64
+
+
+Conflicting duplicate IDs: 1
+Missing after cleaning:
+ Order_ID           0
+Order_Date         0
+Customer_Name      0
+City               0
+Category           0
+Product            0
+Quantity           0
+Unit_Price         0
+Sales              0
+Customer_Rating    0
+
+
+IQR thresholds: -3375.0 8185.0
+Potential outliers: 0
+Empty DataFrame
+Columns: [Order_ID, Sales]
+Index: []
+
+
+Before: 32 After: 23
+Exact duplicates after: 0
+Duplicate IDs after: 0
+Cleaned total sales: 61000.0
+Validation passed

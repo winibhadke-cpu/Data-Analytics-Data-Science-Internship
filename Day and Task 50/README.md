@@ -1,0 +1,1 @@
+Integration draft: extract earlier packages, supply original dataset, execute notebooks in order, validate saved pipeline, assemble actual model comparison and final report and presentation. No final model or GitHub URL is claimed. See institute PDF for exact final structure and report sections.

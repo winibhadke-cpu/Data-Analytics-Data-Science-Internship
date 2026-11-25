@@ -1,0 +1,20 @@
+DAY 14 DAX VALIDATION / EXPECTED OUTPUTS
+Dataset: 30 rows, 10 columns
+Total Revenue: 81,870.00
+Total Orders: 30
+Total Customers (unique names): 6
+Average Order Value: 2,729.00
+Total Quantity: 90
+Weighted Average Unit Price: 909.6667
+Electronics Revenue: 36,000.00
+Pune Revenue: 33,140.00
+Visible Row Count (no filters): 30
+Revenue % All Categories (no filters): 100%
+Total Profit: BLANK (no cost data)
+Profit Margin: BLANK (no cost data)
+
+Category revenue / overall share:
+Clothing: INR 14,950.00; 18.26%
+Electronics: INR 36,000.00; 43.97%
+Grocery: INR 6,720.00; 8.21%
+Home: INR 24,200.00; 29.56%

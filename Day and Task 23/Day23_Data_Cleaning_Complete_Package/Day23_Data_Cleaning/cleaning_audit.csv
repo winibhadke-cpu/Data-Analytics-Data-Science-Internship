@@ -1,0 +1,17 @@
+Check,Value
+rows_before,30.0
+exact_duplicates,0.0
+missing_ratings_before,3.0
+category_values_standardized,0.0
+invalid_dates,0.0
+future_dates,0.0
+duplicate_order_ids,0.0
+negative_sales,0.0
+nonpositive_quantities,0.0
+negative_unit_prices,0.0
+sales_formula_mismatches,0.0
+critical_missing_rows,0.0
+rows_after,30.0
+rating_imputation_median,4.0
+ratings_imputed,3.0
+missing_ratings_after,0.0

@@ -1,0 +1,11 @@
+# Day 30 — Power BI Desktop instructions
+1. Extract the ZIP. Open Power BI Desktop and choose Blank report.
+2. Home > Get data > Text/CSV > select Fact_Sales.csv > Transform Data. Repeat for Dim_Customer.csv, Dim_Product.csv, Dim_Date.csv using Home > New Source > Text/CSV in Power Query.
+3. In Power Query rename queries exactly Fact_Sales, Dim_Customer, Dim_Product, Dim_Date. Set Customer_Key, Product_Key, Quantity, Year, Month_Number, Quarter to Whole Number where present; Sales, Unit_Price, Profit, Customer_Rating to Decimal Number; Order_Date and Date to Date; Order_ID and descriptive columns to Text. Profit must stay null. Close & Apply.
+4. Click Model view (connected boxes icon on left). Inspect existing automatic relationships and remove incorrect or duplicate ones. Use Manage relationships > New to connect each dimension key to the matching fact key. Cardinality One to many (1:*), cross-filter Single, active checked. Relationships: Dim_Customer[Customer_Key] to Fact_Sales[Customer_Key]; Dim_Product[Product_Key] to Fact_Sales[Product_Key]; Dim_Date[Date] to Fact_Sales[Order_Date]. If Fact is selected first, choose Many to one (*:1). No dimension-to-dimension links.
+5. Select Dim_Date > Table tools > Mark as date table > Date. Select Month column > Column tools > Sort by column > Month_Number.
+6. Report view: select Fact_Sales > Modeling > New measure. Paste one measure at a time from Power_BI_DAX_Measures.txt. Format margins/growth as percentages and revenue as INR currency.
+7. Add card visuals and drag measures into each. Check revenue 81870, orders 30, customers 6, units 90, AOV 2729. Profit and growth should be blank for October 2026. Test category and customer slicers. Clear filters before comparing totals.
+8. Return to Model view, arrange Fact_Sales centrally and dimensions around it. Ensure all three lines show 1 and *. Use Windows+Shift+S to capture the model and save as Data_Model_Screenshot.png. The supplied diagram is not a screenshot.
+9. File > Save As > Retail_Analytics.pbix. Reopen and verify. Submit PBIX, actual screenshot and Data_Model_Documentation.docx.
+Notebook: open folder in VS Code, run `py -m venv .venv` then `.\.venv\Scripts\python.exe -m pip install -r requirements.txt`; select .venv kernel and Run All.

@@ -1,0 +1,7 @@
+Feature,Logistic coefficient
+numeric__Satisfaction_Score,-0.679412248428614
+numeric__Annual_Contract,-0.6304061113600898
+numeric__Tenure_Months,-0.4340458131888342
+numeric__Support_Calls_90_Days,0.3235103031989341
+numeric__Support_Calls_Per_Month,0.3235103031989343
+numeric__Monthly_Charges_INR,0.6783619242226907

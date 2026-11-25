@@ -1,0 +1,14 @@
+Create only missing measures; do not duplicate existing names.
+
+Total Revenue = SUM(Fact_Sales[Sales])
+Total Orders = DISTINCTCOUNT(Fact_Sales[Order_ID])
+Total Customers = DISTINCTCOUNT(Fact_Sales[Customer_Key])
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+Total Units Sold = SUM(Fact_Sales[Quantity])
+Total Profit = BLANK()
+Profit Margin = DIVIDE([Total Profit], [Total Revenue])
+Previous Month Revenue = CALCULATE([Total Revenue], DATEADD(Dim_Date[Date], -1, MONTH))
+Monthly Growth = IF(HASONEVALUE(Dim_Date[Year]) && HASONEVALUE(Dim_Date[Month_Number]) && NOT ISBLANK([Total Revenue]) && NOT ISBLANK([Previous Month Revenue]), DIVIDE([Total Revenue] - [Previous Month Revenue], [Previous Month Revenue]), BLANK())
+
+Display Profit = IF(ISBLANK([Total Profit]), "N/A", FORMAT([Total Profit], "#,##0.00"))
+Display Margin = IF(ISBLANK([Profit Margin]), "N/A", FORMAT([Profit Margin], "0.00%"))

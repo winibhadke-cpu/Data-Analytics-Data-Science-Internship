@@ -1,0 +1,67 @@
+DAY 14 - DAX MEASURES FOR RETAIL SALES DASHBOARD
+Source: Day05_Retail_Sales_Dataset.csv | Power BI table: RetailSales
+IMPORTANT: The source has Sales, Quantity and Unit_Price but NO Cost, COGS, or Profit column. Therefore Total Profit and Profit Margin intentionally return BLANK().
+
+INSTRUCTIONS: Power BI Desktop > Open Day13 dashboard > Data pane > right-click RetailSales > New measure. Paste ONE formula at a time. Format currency measures as INR; format Revenue % All Categories as Percentage.
+
+01 Total Revenue
+Total Revenue = SUM(RetailSales[Sales])
+Explanation: Sum of recorded sales. Respects slicers.
+
+02 Total Orders
+Total Orders = DISTINCTCOUNT(RetailSales[Order_ID])
+Explanation: Distinct order IDs, not row count.
+
+03 Total Customers
+Total Customers = DISTINCTCOUNT(RetailSales[Customer_Name])
+Explanation: Distinct names used as a proxy; a customer ID is preferable.
+
+04 Average Order Value
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+Explanation: Revenue per distinct order.
+
+05 Total Quantity
+Total Quantity = SUM(RetailSales[Quantity])
+Explanation: Total items sold.
+
+06 Average Unit Price
+Average Unit Price = DIVIDE(SUMX(RetailSales, RetailSales[Quantity] * RetailSales[Unit_Price]), [Total Quantity])
+Explanation: Weighted unit price across sold items.
+
+07 Electronics Revenue
+Electronics Revenue = CALCULATE([Total Revenue], RetailSales[Category] = "Electronics")
+Explanation: Revenue for electronics; preserves other compatible filters.
+
+08 Pune Revenue
+Pune Revenue = CALCULATE([Total Revenue], FILTER(RetailSales, RetailSales[City] = "Pune"))
+Explanation: Revenue from Pune within current context.
+
+09 Revenue % All Categories
+Revenue % All Categories = DIVIDE([Total Revenue], CALCULATE([Total Revenue], ALL(RetailSales[Category])))
+Explanation: Category share of revenue with category filter removed, other filters retained.
+
+10 Visible Row Count
+Visible Row Count = COUNTROWS(RetailSales)
+Explanation: Number of currently visible rows; differs from distinct orders if duplicate IDs exist.
+
+11 Total Profit (unavailable)
+Total Profit = BLANK()
+Explanation: Required placeholder only: no cost data exists; never show a fabricated value.
+
+12 Profit Margin (unavailable)
+Profit Margin = BLANK()
+Explanation: Required placeholder only: cannot calculate profit/revenue without costs.
+
+OPTIONAL: AFTER YOU OBTAIN VERIFIED COST DATA (NOT BEFORE)
+If a validated row-level Cost column means TOTAL COST for each sales row:
+Total Cost = SUM(RetailSales[Cost])
+Total Profit = [Total Revenue] - [Total Cost]
+Profit Margin = DIVIDE([Total Profit], [Total Revenue])
+If Cost instead means PER-UNIT COST, use:
+Total Cost = SUMX(RetailSales, RetailSales[Quantity] * RetailSales[Cost])
+Do not create these until the correct business meaning of Cost is confirmed.
+
+CHECK VALUES (without slicers)
+Revenue: INR 81,870 | Orders: 30 | Customers (names): 6 | AOV: INR 2,729 | Quantity: 90 | Electronics: INR 36,000 | Pune: INR 33,140 | Visible rows: 30.
+The weighted Average Unit Price is INR 909.67 (81870 / 90).
+The Revenue % All Categories is 100% in unfiltered total context; category-level percentages vary.

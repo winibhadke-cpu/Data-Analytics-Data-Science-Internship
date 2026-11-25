@@ -1,0 +1,12 @@
+{
+  "name": "Retail Executive Navy Teal",
+  "dataColors": [
+    "#008C95",
+    "#17365D",
+    "#59B6B5",
+    "#7795B5"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#17365D",
+  "tableAccent": "#008C95"
+}

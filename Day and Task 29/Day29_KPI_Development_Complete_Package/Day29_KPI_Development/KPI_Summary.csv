@@ -1,0 +1,11 @@
+KPI,Definition,Formula,Business_Meaning,Management_Importance,Value,Unit,Status,Notes
+Total Revenue,Sum of recorded sales,SUM(Sales),Sales generated in the period,Track revenue performance,81870.0,INR,Calculated,
+Total Profit,Sum of recorded profit,SUM(Profit),Earnings after applicable costs,Evaluate financial viability,,INR,Unavailable,No complete Profit column or cost data
+Total Orders,Number of unique orders,COUNT DISTINCT(Order_ID),Transaction volume,Plan operations and demand,30.0,count,Calculated,
+Total Customers,Number of unique customers (name proxy),COUNT DISTINCT(Customer_Name),Observed customer base,Assess customer reach,6.0,count,Calculated,Customer_Name proxy
+Average Order Value,Revenue per unique order,Revenue / Orders,Typical transaction value,Guide upselling and pricing,2729.0,INR,Calculated,
+Profit Margin,Profit as a percentage of revenue,Profit / Revenue × 100,Profitability per rupee of sales,Monitor cost efficiency,,%,Unavailable,Profit unavailable
+Growth %,Change from previous calendar month,(Current - Previous) / Previous × 100,Month-over-month revenue change,Monitor business momentum,,%,Unavailable,Previous calendar month unavailable or zero
+Total Units Sold,Sum of quantities,SUM(Quantity),Volume of merchandise sold,Plan stock replenishment,90.0,count,Calculated,
+Average Customer Spending,Revenue per observed customer,Revenue / Customers,Spending per customer name,Guide customer targeting,13645.0,INR,Calculated,Customer_Name proxy
+Observed Repeat Customer Rate,Share of names with multiple orders,Repeat names / Customers × 100,Repeat purchasing in observed period,Guide loyalty initiatives,100.0,%,Calculated,Observed period; Customer_Name proxy

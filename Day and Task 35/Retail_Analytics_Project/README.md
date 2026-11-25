@@ -1,0 +1,2 @@
+# Retail Analytics Project
+Draft submission. Add actual dashboard/Retail_Analytics.pbix and actual screenshots. Day 28 pending. Original notebooks retained with outputs; run from notebooks directory; inspect original paths before rerun. Run SQL after importing transformed CSV in MySQL. SQL not executed here. Report lists all 18 explicitly enumerated sections (PDF calls them 21). Replace design previews in slide 6 and report with actual screenshots.

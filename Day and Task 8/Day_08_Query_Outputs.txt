@@ -1,0 +1,389 @@
+DAY 8 ADVANCED SQL — REPRODUCIBLE SAMPLE OUTPUTS
+Validated with SQLite using a DATE_FORMAT compatibility function; run MySQL Workbench for final proof.
+
+QUERY 01: Customer orders with names
+order_id | customer_name | order_date
+1001 | Aarav Sharma | 2026-01-05
+1002 | Priya Patil | 2026-01-09
+1003 | Neha Kulkarni | 2026-01-12
+1004 | Aarav Sharma | 2026-02-02
+1005 | Rahul Mehta | 2026-02-11
+1006 | Sneha Joshi | 2026-02-14
+1007 | Kabir Shah | 2026-03-01
+1008 | Isha Deshmukh | 2026-03-08
+1009 | Rohan Gupta | 2026-03-11
+1010 | Ananya Rao | 2026-03-18
+Rows: 10
+
+QUERY 02: Order detail with product
+order_id | product_name | quantity | revenue
+1001 | Laptop | 1 | 55000
+1002 | Smartphone | 1 | 22000
+1003 | Headphones | 2 | 3600
+1004 | Notebook | 5 | 600
+1005 | Office Chair | 2 | 15000
+1006 | Monitor | 1 | 12500
+1007 | Keyboard | 3 | 2850
+1008 | Smartphone | 2 | 44000
+1009 | Desk Lamp | 2 | 3200
+1010 | Notebook | 10 | 1200
+Rows: 10
+
+QUERY 03: Full order details
+order_id | customer_name | product_name | quantity | revenue
+1001 | Aarav Sharma | Laptop | 1 | 55000
+1002 | Priya Patil | Smartphone | 1 | 22000
+1003 | Neha Kulkarni | Headphones | 2 | 3600
+1004 | Aarav Sharma | Notebook | 5 | 600
+1005 | Rahul Mehta | Office Chair | 2 | 15000
+1006 | Sneha Joshi | Monitor | 1 | 12500
+1007 | Kabir Shah | Keyboard | 3 | 2850
+1008 | Isha Deshmukh | Smartphone | 2 | 44000
+1009 | Rohan Gupta | Desk Lamp | 2 | 3200
+1010 | Ananya Rao | Notebook | 10 | 1200
+Rows: 10
+
+QUERY 04: Customers including those with no orders
+customer_id | customer_name | order_count
+1 | Aarav Sharma | 4
+2 | Priya Patil | 3
+3 | Neha Kulkarni | 3
+4 | Rahul Mehta | 2
+5 | Sneha Joshi | 3
+6 | Kabir Shah | 3
+7 | Isha Deshmukh | 2
+8 | Rohan Gupta | 3
+9 | Ananya Rao | 2
+10 | Vivek Nair | 3
+Rows: 10
+
+QUERY 05: Products including unsold products
+product_id | product_name | units_sold
+101 | Laptop | 3
+102 | Smartphone | 5
+103 | Headphones | 8
+104 | Office Chair | 5
+105 | Notebook | 27
+106 | Desk Lamp | 3
+107 | Keyboard | 6
+108 | Monitor | 5
+Rows: 8
+
+QUERY 06: Top 3 customers by spending
+customer_id | customer_name | total_spent
+7 | Isha Deshmukh | 99000
+1 | Aarav Sharma | 85100
+10 | Vivek Nair | 67980
+Rows: 3
+
+QUERY 07: Top 3 products per category
+category | product_name | revenue | category_position
+Accessories | Headphones | 14400 | 1
+Accessories | Keyboard | 5700 | 2
+Electronics | Laptop | 165000 | 1
+Electronics | Smartphone | 110000 | 2
+Electronics | Monitor | 62500 | 3
+Furniture | Office Chair | 37500 | 1
+Furniture | Desk Lamp | 4800 | 2
+Stationery | Notebook | 3240 | 1
+Rows: 8
+
+QUERY 08: Customer ranking with RANK
+customer_name | total_spent | spending_rank
+Isha Deshmukh | 99000 | 1
+Aarav Sharma | 85100 | 2
+Vivek Nair | 67980 | 3
+Priya Patil | 48900 | 4
+Sneha Joshi | 39900 | 5
+Neha Kulkarni | 23600 | 6
+Rahul Mehta | 16600 | 7
+Ananya Rao | 8700 | 8
+Kabir Shah | 7410 | 9
+Rohan Gupta | 5950 | 10
+Rows: 10
+
+QUERY 09: Customer dense ranking
+customer_name | total_spent | dense_rank_no
+Isha Deshmukh | 99000 | 1
+Aarav Sharma | 85100 | 2
+Vivek Nair | 67980 | 3
+Priya Patil | 48900 | 4
+Sneha Joshi | 39900 | 5
+Neha Kulkarni | 23600 | 6
+Rahul Mehta | 16600 | 7
+Ananya Rao | 8700 | 8
+Kabir Shah | 7410 | 9
+Rohan Gupta | 5950 | 10
+Rows: 10
+
+QUERY 10: Monthly revenue
+sales_month | revenue
+2026-01 | 80600
+2026-02 | 28100
+2026-03 | 51250
+2026-04 | 67900
+2026-05 | 47950
+2026-06 | 5200
+2026-07 | 62500
+2026-08 | 22480
+2026-09 | 14300
+2026-10 | 9400
+2026-11 | 13460
+Rows: 11
+
+QUERY 11: Previous month revenue
+sales_month | revenue | previous_month_revenue
+2026-01 | 80600 | NULL
+2026-02 | 28100 | 80600
+2026-03 | 51250 | 28100
+2026-04 | 67900 | 51250
+2026-05 | 47950 | 67900
+2026-06 | 5200 | 47950
+2026-07 | 62500 | 5200
+2026-08 | 22480 | 62500
+2026-09 | 14300 | 22480
+2026-10 | 9400 | 14300
+2026-11 | 13460 | 9400
+Rows: 11
+
+QUERY 12: Month-over-month growth
+sales_month | revenue | previous_revenue | mom_growth_pct
+2026-01 | 80600 | NULL | NULL
+2026-02 | 28100 | 80600 | -65.14
+2026-03 | 51250 | 28100 | 82.38
+2026-04 | 67900 | 51250 | 32.49
+2026-05 | 47950 | 67900 | -29.38
+2026-06 | 5200 | 47950 | -89.16
+2026-07 | 62500 | 5200 | 1101.92
+2026-08 | 22480 | 62500 | -64.03
+2026-09 | 14300 | 22480 | -36.39
+2026-10 | 9400 | 14300 | -34.27
+2026-11 | 13460 | 9400 | 43.19
+Rows: 11
+
+QUERY 13: Employee salary ranking
+employee_name | department | salary | salary_rank
+Nisha Kulkarni | IT | 90000 | 1
+Aditi Rao | Analytics | 85000 | 2
+Kavya Joshi | Analytics | 85000 | 2
+Vikram Shah | Analytics | 75000 | 4
+Rohit Nair | IT | 72000 | 5
+Meera Patil | Sales | 65000 | 6
+Sahil Desai | Sales | 65000 | 6
+Arjun Mehta | HR | 58000 | 8
+Rows: 8
+
+QUERY 14: Department salary ranking
+department | employee_name | salary | department_rank
+Analytics | Aditi Rao | 85000 | 1
+Analytics | Kavya Joshi | 85000 | 1
+Analytics | Vikram Shah | 75000 | 2
+HR | Arjun Mehta | 58000 | 1
+IT | Nisha Kulkarni | 90000 | 1
+IT | Rohit Nair | 72000 | 2
+Sales | Meera Patil | 65000 | 1
+Sales | Sahil Desai | 65000 | 1
+Rows: 8
+
+QUERY 15: Highest paid employee per department
+department | employee_name | salary
+Analytics | Aditi Rao | 85000
+HR | Arjun Mehta | 58000
+IT | Nisha Kulkarni | 90000
+Sales | Meera Patil | 65000
+Rows: 4
+
+QUERY 16: Above-average salary employees
+employee_name | department | salary
+Nisha Kulkarni | IT | 90000
+Aditi Rao | Analytics | 85000
+Kavya Joshi | Analytics | 85000
+Vikram Shah | Analytics | 75000
+Rows: 4
+
+QUERY 17: Customers above average spending
+customer_name | total_spent
+Isha Deshmukh | 99000
+Aarav Sharma | 85100
+Vivek Nair | 67980
+Priya Patil | 48900
+Rows: 4
+
+QUERY 18: Customers who bought electronics
+customer_id | customer_name
+1 | Aarav Sharma
+2 | Priya Patil
+3 | Neha Kulkarni
+5 | Sneha Joshi
+7 | Isha Deshmukh
+10 | Vivek Nair
+Rows: 6
+
+QUERY 19: Revenue by category
+category | revenue
+Electronics | 337500
+Furniture | 42300
+Accessories | 20100
+Stationery | 3240
+Rows: 4
+
+QUERY 20: Product revenue ranks by category
+category | product_name | revenue | revenue_rank
+Accessories | Headphones | 14400 | 1
+Accessories | Keyboard | 5700 | 2
+Electronics | Laptop | 165000 | 1
+Electronics | Smartphone | 110000 | 2
+Electronics | Monitor | 62500 | 3
+Furniture | Office Chair | 37500 | 1
+Furniture | Desk Lamp | 4800 | 2
+Stationery | Notebook | 3240 | 1
+Rows: 8
+
+QUERY 21: Next month revenue
+sales_month | revenue | next_month_revenue
+2026-01 | 80600 | 28100
+2026-02 | 28100 | 51250
+2026-03 | 51250 | 67900
+2026-04 | 67900 | 47950
+2026-05 | 47950 | 5200
+2026-06 | 5200 | 62500
+2026-07 | 62500 | 22480
+2026-08 | 22480 | 14300
+2026-09 | 14300 | 9400
+2026-10 | 9400 | 13460
+2026-11 | 13460 | NULL
+Rows: 11
+
+QUERY 22: Running monthly revenue
+sales_month | revenue | cumulative_revenue
+2026-01 | 80600 | 80600
+2026-02 | 28100 | 108700
+2026-03 | 51250 | 159950
+2026-04 | 67900 | 227850
+2026-05 | 47950 | 275800
+2026-06 | 5200 | 281000
+2026-07 | 62500 | 343500
+2026-08 | 22480 | 365980
+2026-09 | 14300 | 380280
+2026-10 | 9400 | 389680
+2026-11 | 13460 | 403140
+Rows: 11
+
+QUERY 23: Monthly order counts and average value
+sales_month | order_count | avg_order_value
+2026-01 | 3 | 26866.67
+2026-02 | 3 | 9366.67
+2026-03 | 4 | 12812.5
+2026-04 | 3 | 22633.33
+2026-05 | 3 | 15983.33
+2026-06 | 2 | 2600.0
+2026-07 | 2 | 31250.0
+2026-08 | 2 | 11240.0
+2026-09 | 2 | 7150.0
+2026-10 | 2 | 4700.0
+2026-11 | 2 | 6730.0
+Rows: 11
+
+QUERY 24: Orders above customer average
+order_id | customer_id | order_amount
+1001 | 1 | 55000
+1016 | 1 | 22000
+1002 | 2 | 22000
+1014 | 2 | 25000
+1023 | 3 | 12500
+1005 | 4 | 15000
+1022 | 5 | 22000
+1007 | 6 | 2850
+1018 | 6 | 3600
+1019 | 7 | 55000
+1009 | 8 | 3200
+1020 | 9 | 7500
+1011 | 10 | 55000
+Rows: 13
+
+QUERY 25: Top order per customer
+customer_id | order_id | order_amount
+1 | 1001 | 55000
+2 | 1014 | 25000
+3 | 1023 | 12500
+4 | 1005 | 15000
+5 | 1022 | 22000
+6 | 1018 | 3600
+7 | 1019 | 55000
+8 | 1009 | 3200
+9 | 1020 | 7500
+10 | 1011 | 55000
+Rows: 10
+
+QUERY 26: Department salary summary
+department | employee_count | avg_salary | max_salary
+Analytics | 3 | 81666.67 | 85000
+IT | 2 | 81000.0 | 90000
+Sales | 2 | 65000.0 | 65000
+HR | 1 | 58000.0 | 58000
+Rows: 4
+
+QUERY 27: Customer purchase sequence
+customer_id | order_id | order_date | purchase_number
+1 | 1001 | 2026-01-05 | 1
+1 | 1004 | 2026-02-02 | 2
+1 | 1016 | 2026-05-14 | 3
+1 | 1026 | 2026-10-17 | 4
+2 | 1002 | 2026-01-09 | 1
+2 | 1014 | 2026-05-03 | 2
+2 | 1025 | 2026-10-05 | 3
+3 | 1003 | 2026-01-12 | 1
+3 | 1012 | 2026-04-09 | 2
+3 | 1023 | 2026-09-07 | 3
+4 | 1005 | 2026-02-11 | 1
+4 | 1017 | 2026-06-02 | 2
+5 | 1006 | 2026-02-14 | 1
+5 | 1013 | 2026-04-15 | 2
+5 | 1022 | 2026-08-13 | 3
+6 | 1007 | 2026-03-01 | 1
+6 | 1018 | 2026-06-12 | 2
+6 | 1027 | 2026-11-02 | 3
+7 | 1008 | 2026-03-08 | 1
+7 | 1019 | 2026-07-06 | 2
+8 | 1009 | 2026-03-11 | 1
+8 | 1015 | 2026-05-08 | 2
+8 | 1024 | 2026-09-20 | 3
+9 | 1010 | 2026-03-18 | 1
+9 | 1020 | 2026-07-21 | 2
+10 | 1011 | 2026-04-04 | 1
+10 | 1021 | 2026-08-01 | 2
+10 | 1028 | 2026-11-10 | 3
+Rows: 28
+
+QUERY 28: Previous purchase date
+customer_id | order_id | order_date | previous_order_date
+1 | 1001 | 2026-01-05 | NULL
+1 | 1004 | 2026-02-02 | 2026-01-05
+1 | 1016 | 2026-05-14 | 2026-02-02
+1 | 1026 | 2026-10-17 | 2026-05-14
+2 | 1002 | 2026-01-09 | NULL
+2 | 1014 | 2026-05-03 | 2026-01-09
+2 | 1025 | 2026-10-05 | 2026-05-03
+3 | 1003 | 2026-01-12 | NULL
+3 | 1012 | 2026-04-09 | 2026-01-12
+3 | 1023 | 2026-09-07 | 2026-04-09
+4 | 1005 | 2026-02-11 | NULL
+4 | 1017 | 2026-06-02 | 2026-02-11
+5 | 1006 | 2026-02-14 | NULL
+5 | 1013 | 2026-04-15 | 2026-02-14
+5 | 1022 | 2026-08-13 | 2026-04-15
+6 | 1007 | 2026-03-01 | NULL
+6 | 1018 | 2026-06-12 | 2026-03-01
+6 | 1027 | 2026-11-02 | 2026-06-12
+7 | 1008 | 2026-03-08 | NULL
+7 | 1019 | 2026-07-06 | 2026-03-08
+8 | 1009 | 2026-03-11 | NULL
+8 | 1015 | 2026-05-08 | 2026-03-11
+8 | 1024 | 2026-09-20 | 2026-05-08
+9 | 1010 | 2026-03-18 | NULL
+9 | 1020 | 2026-07-21 | 2026-03-18
+10 | 1011 | 2026-04-04 | NULL
+10 | 1021 | 2026-08-01 | 2026-04-04
+10 | 1028 | 2026-11-10 | 2026-08-01
+Rows: 28
+

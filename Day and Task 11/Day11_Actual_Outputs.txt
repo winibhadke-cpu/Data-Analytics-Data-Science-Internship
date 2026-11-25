@@ -1,0 +1,18 @@
+DAY 11 - MATPLOTLIB EXECUTION SUMMARY
+Source: Day05_Retail_Sales_Dataset.csv
+Rows: 30
+Total sales: INR 81,870.00
+Missing customer ratings: 3
+12 charts saved:
+01. Daily Sales Trend — Daily sales fluctuate across the observed order dates.
+02. Sales by Category — Compare category revenue; taller bars represent higher total sales.
+03. Order Sales Distribution — Shows how frequently different order values occur.
+04. Quantity vs Sales — Higher quantity does not always imply higher sales because unit prices differ.
+05. Revenue Share by City — Shows each city’s share of total sales; pie charts have no Cartesian axes.
+06. Sales Spread by Category — Boxes summarize median, quartiles and potential outliers for order sales.
+07. Cumulative Sales Area — Cumulative sales rise as transactions are added over time.
+08. Sales by City — Compares geographic revenue without implying city population or demand.
+09. Top Products by Revenue — Ranks the five highest-revenue products in the sample.
+10. Customer Rating Distribution — Uses non-missing ratings only; missing ratings are not interpreted as zero.
+11. Average Sales by Quantity — Shows average order revenue at each quantity level, not a time trend.
+12. Monthly Sales — Summarizes revenue for months represented in the dataset only.

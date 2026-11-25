@@ -1,0 +1,16 @@
+DAY 3 - FUNCTIONS AND ADVANCED PYTHON BASICS
+Marks: [78, 85, 92, 88, 77]
+Average: 84.00
+Maximum: 92
+Minimum: 77
+Percentage: 84.00%
+Grade: B
+
+ADVANCED PYTHON EXAMPLES
+Lambda square of 6: 36
+map() doubled marks: [156, 170, 184, 176, 154]
+filter() marks >= 80: [85, 92, 88]
+List comprehension squares: [1, 4, 9, 16, 25]
+Dictionary comprehension: {'Subject 1': 78, 'Subject 2': 85, 'Subject 3': 92, 'Subject 4': 88, 'Subject 5': 77}
+math module ceil(82.4): 83
+Exception handling: At least one mark is required.

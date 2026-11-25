@@ -1,0 +1,1 @@
+Original customer_churn.csv is not available. Reports are methodological drafts, not measured results. Data-dependent CSV, charts, models and final presentation must be generated and validated before submission.

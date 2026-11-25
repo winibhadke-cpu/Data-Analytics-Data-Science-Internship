@@ -1,0 +1,15 @@
+Statistic,Value
+Mean,6679.0625
+Median,4695.0
+Mode(s),"[2250.0, 5100.0, 7560.0, 7650.0, 20400.0]"
+Range,19725.0
+Sample variance,28258246.374198716
+Sample standard deviation,5315.84860339332
+10th percentile,1611.0
+25th percentile / Q1,2967.5
+50th percentile / Q2,4695.0
+75th percentile / Q3,9285.0
+90th percentile,13923.000000000002
+IQR,6317.5
+Pearson correlation: Quantity/Revenue,0.5879009351317247
+Sample covariance: Quantity/Revenue,16010.673076923076

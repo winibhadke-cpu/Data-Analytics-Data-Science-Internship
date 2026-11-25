@@ -1,0 +1,1 @@
+Place original customer_churn.csv here. Install requirements, then run python run_task.py or Run All in notebook. Outputs are generated locally; no actual results included. Review schema and prediction-time leakage before training.
